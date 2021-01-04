@@ -39,7 +39,7 @@ def Viterbi(hmm,evidences,path_num):
         M[0][each].push(score,[each])
     
     # t > 0
-    for cur_evd in evidences[1:-1]:
+    for cur_evd in evidences[1:]:
         
         if len(M) == 2:
             M = V[1:]
@@ -57,5 +57,10 @@ def Viterbi(hmm,evidences,path_num):
                     V[1][each_cur].push(score,pth.path+[each_cur])
 
     result = PriorityHeap(path_num)
-    for last_
+    for last in M[1]:
+        for pth in M[1][last]:
+            result.push(pth.score,pth.path)
+    result = [item for item in result]
+
+    return sorted(result, key = lambda item:item.score,reverse= True)
                 
