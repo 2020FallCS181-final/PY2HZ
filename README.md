@@ -9,3 +9,6 @@
 > [BaiDu/DDParser](https://github.com/baidu/DDParser)
 
 > [THUOCL](http://thuocl.thunlp.org)
+
+> [我爱自然语言处理](https://www.52nlp.cn/itenyh%e7%89%88-%e7%94%a8hmm%e5%81%9a%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d%e5%9b%9b%ef%bc%9aa-pure-hmm-%e5%88%86%e8%af%8d%e5%99%a8)
+
