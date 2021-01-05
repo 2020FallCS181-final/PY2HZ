@@ -1,37 +1,17 @@
-# to be edited
-import heappq
+
+import heapq
 DATA    = 'data'
 DEFAULT = 'default'
 class HmmParam():
-    # emission_table = {"hz1":{
-    #                         "py1":prob11,
-    #                         "py2":prob12,
-    #                         ...
-    #                          }
-    #                   "hz1":{
-    #                          "py1":prob11,
-    #                          "py2":prob12,
-    #                         ...
-    #                         }
-    #                 ...}
-    # transition_table = {"hz1":{
-    #                             "hz2":prob12,
-    #                             "hz3":prob13,
-    #                             ...
-    #                            }
-    #                     "hz2":{
-    #                             "hz2":prob22,
-    #                             "hz3":prob23,
-    #                             ...
-    #                           }
-    #                     ...}
-    # start = {"hz1":prob1,"hz2":prob2,...}
-    # py2hz_dict = {"py1":["hz","hz",...],"py1":["hz","hz",...],...}
     def __init__(self):
-        self.emission_table = {{}}   #read from json 
-        self.transition_table = {{}} # read from json
-        self.start = {}              # read from json
-        self.py2hz_dict = {[]}       # read from json
+        self.emission_table = self.readjson('./hmmPT/emmission.json')
+        self.transition_table = self.readjson('./hmmPT/transition_table.json')
+        self.start = self.readjson('./hmmPT/start.json')
+        self.py2hz_dict = self.readjson('./hmmPT/PY2HZ.json')
+
+    def readjson(self,filename):
+        with open(filename) as f:
+            return json.load(f)
 
     def getStartProb(self,state):
         state = as_text(state)
@@ -157,4 +137,67 @@ class PriorityHeap(object):
 
     def __repr__(self):
         return self.__str__()
+
+
+__removetone_dict = {
+    'ā': 'a',
+    'á': 'a',
+    'ǎ': 'a',
+    'à': 'a',
+    'ē': 'e',
+    'é': 'e',
+    'ě': 'e',
+    'è': 'e',
+    'ī': 'i',
+    'í': 'i',
+    'ǐ': 'i',
+    'ì': 'i',
+    'ō': 'o',
+    'ó': 'o',
+    'ǒ': 'o',
+    'ò': 'o',
+    'ū': 'u',
+    'ú': 'u',
+    'ǔ': 'u',
+    'ù': 'u',
+    'ü': 'v',
+    'ǖ': 'v',
+    'ǘ': 'v',
+    'ǚ': 'v',
+    'ǜ': 'v',
+    'ń': 'n',
+    'ň': 'n',
+    '': 'm',
+}
+
+def is_chinese(c):
+    if isinstance(c,str):
+        if c == '':
+            return False
+        return u'\u4e00' <= c <= u'\u9fa5' or c == '〇'
+    else:
+        raise TypeError('invalid type')
+
+def is_chinese_sentence(s):
+    for c in s:
+        if not is_chinese(c):
+            return False
+    return True
+
+def norm_pinyin(pinyin):
+    if 'ue' in pinyin:
+        return pinyin.replace('ue','ve')
+    if 'ng' == pinyin:
+        return 'en'
+    return pinyin
+
+def simplify_pinyin(pinyin):
+    simp = ''
+    for one in pinyin:
+        if one in __removetone_dict:
+            simp += __removetone_dict[one]
+        else:
+            simp += one
+
+    return norm_pinyin(simp.lower())
 
