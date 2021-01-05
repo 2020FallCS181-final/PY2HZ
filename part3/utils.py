@@ -1,6 +1,7 @@
 # to be edited
 import heappq
-
+DATA    = 'data'
+DEFAULT = 'default'
 class HmmParam():
     # emission_table = {"hz1":{
     #                         "py1":prob11,
@@ -33,19 +34,57 @@ class HmmParam():
         self.py2hz_dict = {[]}       # read from json
 
     def getStartProb(self,state):
-        prob = 0
+        state = as_text(state)
+
+        data = self.start[DATA]
+        default = self.start[DEFAULT]
+
+        if state in data:
+            prob = data[state]
+        else:
+            prob = default
         return float(prob)
     
     def getEmiss(self,state,evidence):
-        prob = 0
-        return float(prob)
+        pinyin = as_text(evidence)
+        hanzi = as_text(state)
+
+        data = self.emission_table[DATA]
+        default = self.emission_table[DEFAULT] 
+
+        if hanzi not in data:
+            return float( default )
+        
+        prob_dict = data[hanzi]
+
+        if pinyin not in prob_dict:
+            return float( default )
+        else:
+            return float( prob_dict[pinyin] )
     
     def getTrans(self,prev,curr):
-        prob = 0
-        return float(prob)
+        prev = as_text(prev)
+        curr = as_text(curr)
+        prob = 0.0
+
+        data = self.transition_table[DATA]
+        default = self.transition_table[DEFAULT]
+
+        if prev not in data:
+            return float( default )
+        
+        prob_dict = data[prev]
+
+        if curr in prob_dict:
+            return float( prob_dict[curr] )
+        
+        if DEFAULT in prob_dict:
+            return float( prob_dict[DEFAULT] )
+
+        return float( default )
     
     def getPossibleStates(self,evidence):
-        return ["list of hanzi"]
+        return [hanzi for hanzi in self.py2hz_dict[evidence]]
     
 # coding: utf-8
 
