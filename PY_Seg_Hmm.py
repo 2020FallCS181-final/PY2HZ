@@ -66,7 +66,7 @@ class pySegHMM(object):
         '''
         initialize Trans and Emis from the given data in the give path
         '''
-        pass
+        pass 
     
     def EmisMap(self, observations):
         '''
