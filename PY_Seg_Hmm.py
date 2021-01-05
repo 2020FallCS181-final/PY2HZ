@@ -102,7 +102,8 @@ class pySegHMM(object):
                 if pinyin_id != len(SentenceList[st_id]) - 1:
                     nextTag = TagList[st_id][pinyin_id+1]
                     self.Trans[currentTag, nextTag] += 1
-        
+        # self.Trans[1,2] += 200000
+        # self.Trans[2,2] += 100000
         for i in range(self.n):
             self.Trans[i,:] = self.Trans[i,:] / np.sum(self.Trans[i,:])
             self.Emis[i,:] = self.Emis[i,:] / np.sum(self.Emis[i,:])
@@ -142,12 +143,16 @@ class pySegHMM(object):
             for s_t in range(self.n):
                 for s_t_1 in range(self.n):
                     if ProbState[t, s_t] < ProbState[t-1, s_t_1] * self.Trans[s_t_1, s_t]:
-                        ProbState[t, s_t] = ProbState[t-1, s_t_1] * self.Trans[s_t_1, s_t] * self.Emismap[s_t, t]
+                        ProbState[t, s_t] = ProbState[t-1, s_t_1] * self.Trans[s_t_1, s_t]
                         PreState[t, s_t] = s_t_1
+                ProbState[t, s_t] *= self.Emismap[s_t, t]
 
         # Backtracking
         path = np.zeros(self.T, dtype=int)
         path[-1] = np.argmax(ProbState[-1,:]) 
+
+        # print('Previous State:{}'.format(PreState))
+        # print('Proba table: {}'.format(ProbState))
 
         for t in range(1, self.T):
             path[self.T - t - 1] = PreState[self.T - t, path[self.T - t]]
