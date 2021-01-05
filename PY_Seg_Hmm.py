@@ -31,7 +31,7 @@ class pySegHMM(object):
     Model attributes:
     - n               number of hidden states, here 4, {S, B, M, E}
     - m               number of observable variables, the length of list of all pinyins in our dataset
-    - Tans            hidden state transition matrix, [n x n], the prob from a label to another
+    - Trans            hidden state transition matrix, [n x n], the prob from a label to another. Trans[i,j] = prob from state i in time t-1 to state j in time t
     - Emis            emission matrix, [n x m], each hidden state's distribution
     - initDist        initial distribution for each hidden state, we may use statistical method to initialize it. 
 
@@ -59,14 +59,14 @@ class pySegHMM(object):
         elif initMethod == 'statistic':
             pass
 
-        if self.Trans == None:
+        if path != None:
             self.dataInit(path)
 
     def dataInit(self, path):
         '''
         initialize Trans and Emis from the given data in the give path
         '''
-        pass
+        pass 
     
     def EmisMap(self, observations):
         '''
@@ -111,6 +111,14 @@ class pySegHMM(object):
         for t in range(1, self.T):
             path[self.T - t - 1] = PreState[self.T - t, path[self.T - t]]
         return path
+    
+    def saveModel(self):
+        '''
+        save the trained model
+        '''
+        np.savetxt('model/trans.txt', self.Trans)
+        np.savetxt('model/Emis.txt', self.Emis)
+        np.savetxt('model/initDist.txt', self.initDist)
 
         
 
