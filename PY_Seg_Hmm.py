@@ -70,20 +70,48 @@ class pySegHMM(object):
     
     def EmisMap(self, observations):
         '''
-        map Emis ([n x m]) to Emismap([n x T]), where T is the length of the observation.
+        map Emis ([n x m]) to Emismap ([n x T]), where T is the length of the observation.
         This generally gives us a much easier iteration in Viterbi
         '''
-        T = len(observations)
-        self.Emismap = np.zeros((self.n, T), dtype=self.precision)
+        self.T = len(observations)
+        self.Emismap = np.zeros((self.n, self.T), dtype=self.precision)
 
         for i in range(self.n):
-            for t in range(T):
+            for t in range(self.T):
                 self.Emismap[i,t] = self.Emis[i, observations[t]]
 
     def Viterbi(self, observations):
         '''
         Using Viterbi algorithm to find the most probable label sequence
+
+        PreState[t,i]            - [T x n]  the most likely previous hidden state of hidden state i at time t
+        ProbState[t,i]           - [T x n]  the prob of hidden state
         '''
         self.EmisMap(observations)
+
+        PreState = np.zeros((self.T, self.n), dtype=int)
+        ProbState = np.zeros((self.T, self.n), dtype=self.precision)
+
+        # Initialization
+        for i in range(self.n):
+            ProbState[0,i] = self.initDist[i] * self.Emismap[i, 0]
+
+        # Calculation
+        for t in range(1, self.T):
+            for s_t in range(self.n):
+                for s_t_1 in range(self.n):
+                    if ProbState[t, s_t] < ProbState[t-1, s_t_1] * self.Trans[s_t_1, s_t]:
+                        ProbState[t, s_t] = ProbState[t-1, s_t_1] * self.Trans[s_t_1, s_t] * self.Emismap[s_t, t]
+                        PreState[t, s_t] = s_t_1
+
+        # Backtracking
+        path = np.zeros(self.T, dtype=int)
+        path[-1] = np.argmax(ProbState[-1,:]) 
+
+        for t in range(1, self.T):
+            path[self.T - t - 1] = PreState[self.T - t, path[self.T - t]]
+        return path
+
+        
 
         
