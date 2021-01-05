@@ -56,8 +56,6 @@ class pySegHMM(object):
 
         if initMethod == 'uniform':
             self.initDist = 1.0/self.n * np.ones((self.n), dtype=self.precision)
-        elif initMethod == 'statistic':
-            pass
 
         if path != None:
             self.dataInit(path)
@@ -66,7 +64,46 @@ class pySegHMM(object):
         '''
         initialize Trans and Emis from the given data in the give path
         '''
-        pass 
+
+        SentenceList = np.load(path+'/PYList.npy', dtype=self.precision)
+        SentenceList = SentenceList.tolist()
+
+        TagList = np.load(path+'/TagList.npy', dtype=self.precision)
+        TagList = TagList.tolist()
+
+        numSentence = SentenceList.shape[0]
+
+        idxCount = 0
+
+        PYdict = {}
+
+        for st_id in range(numSentence):
+            for pinyin_id in range(len(SentenceList[st_id])):
+                # this pinyin not in dictionary
+                if PYdict.get(SentenceList[st_id][pinyin_id], -1) == -1:
+                    PYdict[SentenceList[st_id][pinyin_id]] = idxCount
+                    idxCount += 1
+        
+        self.m = len(PYdict)
+
+        self.Trans = np.zeros((self.n, self.n), dtype=self.precision)
+        self.Emis = np.zeros((self.n, self.m), dtype=self.precision)
+
+        for st_id in range(numSentence):
+            for pinyin_id in range(len(SentenceList[st_id])):
+                currentTag = TagList[st_id][pinyin_id]
+                currentDictid = PYdict[SentenceList[st_id][pinyin_id]]
+                
+                self.Emis[currentTag, currentDictid] += 1
+
+                if pinyin_id != len(SentenceList[st_id]):
+                    nextTag = TagList[st_id][pinyin_id+1]
+                    self.Trans[currentTag, nextTag] += 1
+        
+        for i in range(self.n):
+            self.Trans[i,:] = self.Trans[i,:] / np.sum(self.Trans[i,:])
+            self.Emis[i,:] = self.Emis[i,:] / np.sum(self.Emis[i,:])
+
     
     def EmisMap(self, observations):
         '''
