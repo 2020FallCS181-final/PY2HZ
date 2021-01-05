@@ -1,6 +1,6 @@
 # AI Final - PY2HZ
 
-## Record Document
+# Record Document
 
 > [Tencent Document](https://docs.qq.com/doc/DTEhqUHR1ck1Tak9s)
 
@@ -15,6 +15,10 @@
 > [base HMM Framework](https://github.com/guyz/HMM/blob/d089cbe9dc99f7c2e279d82ea3840cf8d4a2f6a0/hmm/_BaseHMM.py#L13)
 
 > [Discrete HMM Framework](https://github.com/guyz/HMM/blob/master/hmm/discrete/DiscreteHMM.py)
+
+# Code
+
+- `PY_Preprocess.py`: Preprocess the raw data from icwb2.
 
 
 

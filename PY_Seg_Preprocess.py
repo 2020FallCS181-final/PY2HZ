@@ -9,7 +9,7 @@ This is used for preprocessing data from icwb2-data.
 Non-Chinese symbols are intepreted as delimiter.
 '''
 
-DATA_DIR = './icwb2-data/training/pku_training.utf8'                # Path of data we will use
+DATA_PATH = './icwb2-data/training/pku_training.utf8'                # Path of data we will use
 
 def LoadData(dir):
     '''
@@ -95,16 +95,41 @@ def ConvertingAndTagging(FinalSentenceList):
     return PYList, TagList
 
 
+def InitialDistribution(TagList):
+    '''
+    Determine the initial distribution through tag list.s
+    '''
+    S, B, M, E = 0, 1, 2, 3
+    InitialDistribution = np.zeros(4)
+    for t in range(len(TagList)):
+        InitialTag = TagList[t][0]
+        InitialDistribution[InitialTag] += 1
+    
+    InitialDistribution = InitialDistribution / np.sum(InitialDistribution)         # Normalization
+
+    return InitialDistribution
+
+def PreprocessData(path):
+    '''
+    Input: path to raw data.
+    Output: pinyin list and tag list.
+    '''
+    SentenceList = LoadData(path)
+    FinalSentenceList = EliminateNonChinese(SentenceList)
+    PYList, TagList = ConvertingAndTagging(FinalSentenceList)
+    PYListArray, TagListArray = np.array(PYList), np.array(TagList)
+    StartDistribution = InitialDistribution(TagList)
+
+    os.chdir('./Preprocessed_Data')
+    np.save('PYList.npy', PYListArray)
+    np.save('TagList.npy', TagListArray)
+    np.save('InitialDistribution.npy', StartDistribution)
+
+
 if __name__ == "__main__":
     '''
     Sava data as numpy array and set allow_pickle = True
     when loading data.
     '''
-    SentenceList = LoadData(DATA_DIR)
-    FinalSentenceList = EliminateNonChinese(SentenceList)
-    PYList, TagList = ConvertingAndTagging(FinalSentenceList)
-    PYListArray, TagListArray = np.array(PYList), np.array(TagList)
+    PreprocessData(DATA_PATH)
 
-    os.chdir('./Preprocessed_Data')
-    np.save('PYList.npy', PYListArray)
-    np.save('TagList.npy', TagListArray)
