@@ -1,4 +1,5 @@
 import re
+import os
 import numpy as np
 import pinyin
 
@@ -93,8 +94,17 @@ def ConvertingAndTagging(FinalSentenceList):
 
     return PYList, TagList
 
-# Save data
+
 if __name__ == "__main__":
+    '''
+    Sava data as numpy array and set allow_pickle = True
+    when loading data.
+    '''
     SentenceList = LoadData(DATA_DIR)
     FinalSentenceList = EliminateNonChinese(SentenceList)
     PYList, TagList = ConvertingAndTagging(FinalSentenceList)
+    PYListArray, TagListArray = np.array(PYList), np.array(TagList)
+
+    os.chdir('./Preprocessed_Data')
+    np.save('PYList.npy', PYListArray)
+    np.save('TagList.npy', TagListArray)
