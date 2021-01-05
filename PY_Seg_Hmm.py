@@ -39,7 +39,7 @@ class pySegHMM(object):
     - precision       element precision, e.g. np.float64, np.float32
     '''
 
-    def __init__(self, n, m, Trans=None, Emis=None, initDist=None, precision=np.float64, initMethod='uniform', path=None):
+    def __init__(self, n, m, Trans=None, Emis=None, initDist=None, PYdict=None, precision=np.float64, initMethod='statistic', path=None):
         '''
         Construction of a new HMM
 
@@ -52,6 +52,7 @@ class pySegHMM(object):
         self.Trans = Trans
         self.Emis = Emis
         self.initDist = initDist
+        self.PYdict = PYdict
         self.precision = precision
 
         if initMethod == 'uniform':
@@ -65,26 +66,28 @@ class pySegHMM(object):
         initialize Trans and Emis from the given data in the give path
         '''
 
-        SentenceList = np.load(path+'/PYList.npy', dtype=self.precision)
+        SentenceList = np.load(path+'/PYList.npy', allow_pickle=True)
         SentenceList = SentenceList.tolist()
 
-        TagList = np.load(path+'/TagList.npy', dtype=self.precision)
+        TagList = np.load(path+'/TagList.npy', allow_pickle=True)
         TagList = TagList.tolist()
 
-        numSentence = SentenceList.shape[0]
+        self.initDist = np.load(path+'/InitialDistribution.npy')
+
+        numSentence = len(SentenceList)
 
         idxCount = 0
 
-        PYdict = {}
+        self.PYdict = {}
 
         for st_id in range(numSentence):
             for pinyin_id in range(len(SentenceList[st_id])):
                 # this pinyin not in dictionary
-                if PYdict.get(SentenceList[st_id][pinyin_id], -1) == -1:
-                    PYdict[SentenceList[st_id][pinyin_id]] = idxCount
+                if self.PYdict.get(SentenceList[st_id][pinyin_id], -1) == -1:
+                    self.PYdict[SentenceList[st_id][pinyin_id]] = idxCount
                     idxCount += 1
         
-        self.m = len(PYdict)
+        self.m = len(self.PYdict)
 
         self.Trans = np.zeros((self.n, self.n), dtype=self.precision)
         self.Emis = np.zeros((self.n, self.m), dtype=self.precision)
@@ -92,11 +95,11 @@ class pySegHMM(object):
         for st_id in range(numSentence):
             for pinyin_id in range(len(SentenceList[st_id])):
                 currentTag = TagList[st_id][pinyin_id]
-                currentDictid = PYdict[SentenceList[st_id][pinyin_id]]
+                currentDictid = self.PYdict[SentenceList[st_id][pinyin_id]]
                 
                 self.Emis[currentTag, currentDictid] += 1
 
-                if pinyin_id != len(SentenceList[st_id]):
+                if pinyin_id != len(SentenceList[st_id]) - 1:
                     nextTag = TagList[st_id][pinyin_id+1]
                     self.Trans[currentTag, nextTag] += 1
         
@@ -111,11 +114,12 @@ class pySegHMM(object):
         This generally gives us a much easier iteration in Viterbi
         '''
         self.T = len(observations)
+        NewObservations = [self.PYdict[i] for i in observations]
         self.Emismap = np.zeros((self.n, self.T), dtype=self.precision)
 
         for i in range(self.n):
             for t in range(self.T):
-                self.Emismap[i,t] = self.Emis[i, observations[t]]
+                self.Emismap[i,t] = self.Emis[i, NewObservations[t]]
 
     def Viterbi(self, observations):
         '''
@@ -153,9 +157,10 @@ class pySegHMM(object):
         '''
         save the trained model
         '''
-        np.savetxt('model/trans.txt', self.Trans)
-        np.savetxt('model/Emis.txt', self.Emis)
-        np.savetxt('model/initDist.txt', self.initDist)
+        np.save('model/trans.npy', self.Trans)
+        np.save('model/Emis.npy', self.Emis)
+        np.save('model/initDist.npy', self.initDist)
+        np.save('model/dict.npy', self.PYdict)
 
         
 
