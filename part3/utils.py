@@ -1,11 +1,11 @@
-
+import json
 import heapq
 DATA    = 'data'
-DEFAULT = 'default'
+DEFAULT = 'defult'
 class HmmParam():
     def __init__(self):
         self.emission_table = self.readjson('./hmmPT/emmission.json')
-        self.transition_table = self.readjson('./hmmPT/transition_table.json')
+        self.transition_table = self.readjson('./hmmPT/transition.json')
         self.start = self.readjson('./hmmPT/start.json')
         self.py2hz_dict = self.readjson('./hmmPT/PY2HZ.json')
 
@@ -14,7 +14,7 @@ class HmmParam():
             return json.load(f)
 
     def getStartProb(self,state):
-        state = as_text(state)
+        # state = as_text(state)
 
         data = self.start[DATA]
         default = self.start[DEFAULT]
@@ -26,8 +26,10 @@ class HmmParam():
         return float(prob)
     
     def getEmiss(self,state,evidence):
-        pinyin = as_text(evidence)
-        hanzi = as_text(state)
+        # pinyin = as_text(evidence)
+        # hanzi = as_text(state)
+        pinyin = evidence
+        hanzi = state
 
         data = self.emission_table[DATA]
         default = self.emission_table[DEFAULT] 
@@ -43,8 +45,8 @@ class HmmParam():
             return float( prob_dict[pinyin] )
     
     def getTrans(self,prev,curr):
-        prev = as_text(prev)
-        curr = as_text(curr)
+        # prev = as_text(prev)
+        # curr = as_text(curr)
         prob = 0.0
 
         data = self.transition_table[DATA]
