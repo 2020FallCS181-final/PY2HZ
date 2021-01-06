@@ -4,10 +4,10 @@ DATA    = 'data'
 DEFAULT = 'defult'
 class HmmParam():
     def __init__(self):
-        self.emission_table = self.readjson('./hmmPT/emmission.json')
-        self.transition_table = self.readjson('./hmmPT/transition.json')
-        self.start = self.readjson('./hmmPT/start.json')
-        self.py2hz_dict = self.readjson('./hmmPT/PY2HZ.json')
+        self.emission_table = self.readjson('../part3/hmmPT/emmission.json')
+        self.transition_table = self.readjson('../part3/hmmPT/transition.json')
+        self.start = self.readjson('../part3/hmmPT/start.json')
+        self.py2hz_dict = self.readjson('../part3/hmmPT/PY2HZ.json')
 
     def readjson(self,filename):
         with open(filename) as f:
