@@ -1,4 +1,5 @@
 from util import get_pinyin_content
+import numpy as np
 
 class Trie_Tree_Node:
     def __init__(self, key):
@@ -7,7 +8,6 @@ class Trie_Tree_Node:
         self.appearance = 0
         self.children = {}
 
-import numpy as np
 class Trie_Tree:
     def __init__(self, root):
         self.root = root
