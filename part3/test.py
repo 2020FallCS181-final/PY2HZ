@@ -5,25 +5,42 @@ import utils
 from ChineseTone import PinyinHelper
 from tqdm import tqdm
 
-with open('./test/test_set.json') as f:
+def norm_pinyin(pylist):
+	result = []
+	for pinyin in pylist:
+	    if 'ue' in pinyin:
+	        result.append(pinyin.replace('ue','ve'))
+	    elif 'ng' == pinyin:
+	        result.append('en')
+	    else:
+	    	result.append(pinyin)
+	return result
+
+with open('./test3/test_set_9plus.json') as f:
 	test_set = json.load(f)
 
 hmm = HmmParam()
-# hmm.py2hz_dict['不']
-# hmm.emmission['不']
 count_single = 0
 correct_single = 0
 count_sentence = 0
 correct_sentence = 0
+
 for i in tqdm(range(len(test_set))):
 	count_sentence += 1
 	test = test_set[i]
 	flag = True
-	answer = Viterbi(hmm,test['py'],5)[0].path
-	# print(answer)
+	try:
+		answer = Viterbi(hmm,test['py'],5)[0].path
+	except:
+		try:
+			answer = Viterbi(hmm,norm_pinyin(test['py']),5)[0].path
+		except:
+			continue
+
+	ground_truth = test['hz']
 	for idx,an in enumerate(answer):
 		count_single += 1
-		if an == test['hz'][idx]:
+		if an == ground_truth[idx]:
 			correct_single += 1
 		else:
 			flag = False
