@@ -54,6 +54,8 @@ class pySegHMM(object):
         self.initDist = initDist
         self.PYdict = PYdict
         self.precision = precision
+        if path == None:
+            self.m = Emis.shape[1]
 
         if initMethod == 'uniform':
             self.initDist = 1.0/self.n * np.ones((self.n), dtype=self.precision)
@@ -162,10 +164,10 @@ class pySegHMM(object):
         '''
         save the trained model
         '''
-        np.save('model/trans.npy', self.Trans)
-        np.save('model/Emis.npy', self.Emis)
-        np.save('model/initDist.npy', self.initDist)
-        np.save('model/dict.npy', self.PYdict)
+        np.save('../part2/model/trans.npy', self.Trans)
+        np.save('../part2/model/Emis.npy', self.Emis)
+        np.save('../part2/model/initDist.npy', self.initDist)
+        np.save('../part2/model/dict.npy', self.PYdict)
 
         
 

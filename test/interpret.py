@@ -6,12 +6,15 @@ sys.path.insert(0, os.path.dirname(__file__) + os.sep + '../')
 
 import time
 from part1.seg_with_trie_consider_next import Trie_Tree
+from part1.seg_with_regex import seg_with_re
 from part2.PY_Seg_Hmm import pySegHMM
 from part2.PY_Seg_util import PY_Discre2Continu
 from part3.utils import HmmParam
 from part3.viterbi import Viterbi
 
-
+'''
+this file interpret a single sentence to chinese
+'''
 
 if __name__ == "__main__":
     '''
@@ -19,8 +22,8 @@ if __name__ == "__main__":
 
     'woaibeijingtiananmen'    -->   ['wo', 'ai', 'bei', 'jing', 'tian', 'an', 'men']
     '''
-    tree = Trie_Tree('root')
-    segPY = tree.search("zailiangdeshirentoutengdedengguangxia").split()
+    trie_Tree = Trie_Tree('root')
+    segPY = trie_Tree.search("zailiangdeshirentoutengdedengguangxia").split()
     print(segPY)
     
     '''
@@ -28,8 +31,8 @@ if __name__ == "__main__":
 
     ['wo', 'ai', 'bei', 'jing', 'tian', 'an', 'men']    -->   ['wo', 'ai', 'beijing', 'tiananmen']
     '''
-    path = '../part2/Preprocessed_Data'
-    SegHmm = pySegHMM(4, 100,path=path)
+    loadpath = '../part2/model'
+    SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
     tagList = SegHmm.Viterbi(segPY)
     retList = PY_Discre2Continu(segPY, tagList)
     
@@ -42,5 +45,8 @@ if __name__ == "__main__":
     '''
     retList = ['zai', 'liang', 'de', 'shiren', 'touteng', 'de', 'dengguang', 'xia']
     finalhmm = HmmParam()
-    finalList = Viterbi(finalhmm,retList,5)
-    print(finalList)
+    finalList1 = Viterbi(finalhmm,retList,5)
+    print(finalList1)
+
+    finalList2 = Viterbi(finalhmm,segPY,5)
+    print(finalList2)

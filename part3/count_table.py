@@ -146,8 +146,8 @@ def main():
 	emmission = {}
 	transition = {}
 
-	# print('train_on_hanzipinyin')
-	# train_on_hanzipinyin(emmission)
+	print('train_on_hanzipinyin')
+	train_on_hanzipinyin(emmission)
 	print('train_on_THUOCL')
 	train_on_THUOCL(start,emmission,transition)
 	print('train_on_sentence')

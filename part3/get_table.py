@@ -4,6 +4,7 @@ import utils
 import thulac
 from tqdm import tqdm
 import json
+import math
 
 DEFAULT = 1
 
@@ -30,9 +31,11 @@ def get_start_PT():
 	for c in start:
 		count += start[c]
 	for c in start:
-		start[c] /= count
+		# start[c] /= 1
+		# start[c] /= count
+		start[c] = math.log(start[c] + DEFAULT) + DEFAULT
 	data['data'] = start
-	data['defult'] = DEFAULT/count
+	data['defult'] = DEFAULT
 	writejson(data, START_PT)
 
 def get_emmission_PT():
@@ -43,8 +46,11 @@ def get_emmission_PT():
 		for p in emmission[c]:
 			count += emmission[c][p]
 		for p in emmission[c]:
-			emmission[c][p] /= count
-	data['defult'] = 1.e-50
+			# emmission[c][p] /= 1
+			# emmission[c][p] /= count
+			emmission[c][p] = math.log(emmission[c][p] + DEFAULT) + DEFAULT
+
+	data['defult'] = DEFAULT
 	data['data'] = emmission
 	writejson(data, EMMISSION_PT)
 
@@ -56,9 +62,11 @@ def get_transition_PT():
 		for p in transition[c]:
 			count += transition[c][p]
 		for p in transition[c]:
-			transition[c][p] /= count
-		transition[c]['defult'] = DEFAULT/count
-	data['defult'] = 1.e-6
+			# transition[c][p] /= 1
+			# transition[c][p] /= count
+			transition[c][p] = math.log(transition[c][p] + DEFAULT) + DEFAULT
+		transition[c]['defult'] = DEFAULT
+	data['defult'] = DEFAULT
 	data['data'] = transition
 	writejson(data, TRANSITION_PT)
 

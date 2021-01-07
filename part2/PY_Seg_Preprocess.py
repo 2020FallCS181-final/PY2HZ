@@ -9,7 +9,8 @@ This is used for preprocessing data from icwb2-data.
 Non-Chinese symbols are intepreted as delimiter.
 '''
 
-DATA_PATH = './icwb2-data/training/pku_training.utf8'                # Path of data we will use
+# DATA_PATH = './icwb2-data/training/pku_training.utf8'  
+DATA_PATH = './icwb2-data/training/sentence_split.txt'             # Path of data we will use
 
 def LoadData(dir):
     '''
@@ -35,7 +36,7 @@ def EliminateNonChinese(SentenceList):
     pattern1 = re.compile(r'[^\u4e00-\u9fa5\s]+')                   # Pattern that keeping only Chinese and space
     FinalSentenceList = []
     for i in range(len(SentenceList)):
-        SentenceList[i] = re.sub('\n','', SentenceList[i])          # Delete \n
+        # SentenceList[i] = re.sub('\n','', SentenceList[i])          # Delete \n
         OnlyChinese = re.sub(pattern1, '\n', SentenceList[i])       # Keep only Chinese and space
 
         # Find subsentences
@@ -48,7 +49,7 @@ def EliminateNonChinese(SentenceList):
                 ValidSentence = pattern2.search(SubSentence)        # Check if there is Chinese in the sentence
                 if ValidSentence:                                   # If so, add it as a new sentence
                     SubSentence = SubSentence.strip()
-                    SplitedSubSentence = SubSentence.split('  ')
+                    SplitedSubSentence = SubSentence.split(' ')
 
                     # Omit the single-word sentence
                     if len(SplitedSubSentence) == 1 and \
@@ -124,7 +125,8 @@ def PreprocessData(path):
     np.save('PYList.npy', PYListArray)
     np.save('TagList.npy', TagListArray)
     np.save('InitialDistribution.npy', StartDistribution)
-
+    print(PYList[0:5])
+    print(TagList[0:5])
 
 if __name__ == "__main__":
     '''

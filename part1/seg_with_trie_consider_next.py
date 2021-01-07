@@ -10,7 +10,7 @@ class Trie_Tree(object):
     
     def __init__(self, root):
         self.root = self.Trie_Tree_Node(root)
-        with open ('../part1/pinyin_content.utf8', 'r') as f:
+        with open ('../part1/test_pinyin_content.utf8', 'r') as f:
             pinyin_content = f.read().split()
         for item in pinyin_content:
             self.insert(item)
@@ -39,7 +39,7 @@ class Trie_Tree(object):
                 key = word[i]
                 if key not in parent_node.children.keys():
                     if (len(segments) == 0):
-                        return "cuowu"
+                        return spell + 'cuowu'
                     if len(segments) == 1:
                         choose_seg = segments[-1]
                     else :
@@ -52,7 +52,9 @@ class Trie_Tree(object):
                             if appearances[i] != 0: 
                                 if i > 0 and word[len(segments[i])] in 'aeiouv' \
                                          and word[len(segments[i])-1] not in 'aeiouv' \
-                                         and word[len(segments[i])-3:len(segments[i])] != 'ian':
+                                         and word[len(segments[i])-3:len(segments[i])] != 'ian' \
+                                         and word[len(segments[i]):len(segments[i])+2] != 'er' \
+                                         and word[len(segments[i])-3:len(segments[i])] != 'uan':
                                     continue
                                 else:
                                     choose_seg = segments[i]
@@ -69,7 +71,6 @@ class Trie_Tree(object):
         return spell[:-1]
     
     def pre_search(self, word):
-        # import pdb; pdb.set_trace()
         fuyin = 'bcdfghjklmnpqrstwxyz'
         spell = ''
         if word[-1] != ' ':

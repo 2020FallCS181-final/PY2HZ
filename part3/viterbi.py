@@ -18,8 +18,8 @@
 #                 "py2":prob12,
 #                 ...}
 #         ...}
-from .utils import HmmParam
-from .utils import PriorityHeap
+from part3.utils import HmmParam
+from part3.utils import PriorityHeap
 import math
 # hmm: HmmParam() instance
 # observations:list
