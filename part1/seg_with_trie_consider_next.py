@@ -10,7 +10,7 @@ class Trie_Tree(object):
     
     def __init__(self, root):
         self.root = self.Trie_Tree_Node(root)
-        with open ('test_pinyin_content.utf8', 'r') as f:
+        with open ('pinyin_to_init_trie_tree.utf8', 'r') as f:
             pinyin_content = f.read().split()
         for item in pinyin_content:
             self.insert(item)
@@ -54,7 +54,9 @@ class Trie_Tree(object):
                                          and word[len(segments[i])-1] not in 'aeiouv' \
                                          and word[len(segments[i])-3:len(segments[i])] != 'ian' \
                                          and word[len(segments[i]):len(segments[i])+2] != 'er' \
-                                         and word[len(segments[i])-3:len(segments[i])] != 'uan':
+                                         and word[len(segments[i])-3:len(segments[i])] != 'uan' \
+                                         and word[:len(segments[i])+2] != 'qinai' \
+                                         and word[len(segments[i]):len(segments[i])+5] != 'emeng':
                                     continue
                                 else:
                                     choose_seg = segments[i]
