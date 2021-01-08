@@ -37,7 +37,8 @@
             "jigougaige",
             "deng",
             "qingkuang"
-        ]
+        ],
+        "zu": "zhu rong ji zong li hai ying ke ren de yao qiu jie shao le wo guo guo nei jing ji xing shi he ji gou gai ge deng qing kuang"
     },
     {
         "hz": [
@@ -65,7 +66,8 @@
             "zuo",
             "chu",
             "gongxian"
-        ]
+        ],
+        "zu": "wei zao ri shi xian liang an zhi jie san tong ji xu zuo chu gong xian"
     },
     {
         "hz": [
@@ -96,7 +98,7 @@
             "he",
             "dengxiaopinglilun",
             "de",
-            "kexvexing",
+            "kexuexing",
             "zhu",
             "junfeng",
             "jiang",
@@ -107,7 +109,8 @@
             "shang",
             "de",
             "baogao"
-        ]
+        ],
+        "zu": "gao ju qi zhi de jian ding xing he deng xiao ping li lun de ke xue xing zhu jun feng jiang ze min tong zhi zai shi wu da shang de bao gao"
     },
     {
         "hz": [
@@ -133,7 +136,8 @@
             "he",
             "aihu",
             "guoqi"
-        ]
+        ],
+        "zu": "mei ge gong min he zu zhi dou ying dang zun zhong he ai hu guo qi"
     },
     {
         "hz": [
@@ -159,7 +163,8 @@
             "ting",
             "ban",
             "zhidu"
-        ]
+        ],
+        "zu": "er shi shi xing yi tao yan ge de zhang die ting ban zhi du"
     },
     {
         "hz": [
@@ -187,7 +192,8 @@
             "de",
             "youhao",
             "hezuo"
-        ]
+        ],
+        "zu": "jia qiang zhong te liang guo bao kuo jing mao jiao liu zai nei de you hao he zuo"
     },
     {
         "hz": [
@@ -227,7 +233,8 @@
             "de",
             "yixie",
             "xiangfa"
-        ]
+        ],
+        "zu": "dan e fu ze du lian ti shi wu de fu zong li xie luo fu bu jiu qian ceng tou lu guo e de yi xie xiang fa"
     },
     {
         "hz": [
@@ -250,8 +257,9 @@
             "falv",
             "lai",
             "zuo",
-            "jveding"
-        ]
+            "jueding"
+        ],
+        "zu": "zhe de you jing cha he fa lv lai zuo jue ding"
     },
     {
         "hz": [
@@ -285,15 +293,16 @@
             "diaocha",
             "de",
             "laoyibei",
-            "shehuixve",
+            "shehuixue",
             "jia",
             "lijinghan",
             "xiansheng",
             "cengjing",
             "zai",
-            "rendashehuixvesuo",
+            "rendashehuixuesuo",
             "gongzuo"
-        ]
+        ],
+        "zu": "zai nian dai xie chu zhu ming ding xian she hui gai kuang diao cha de lao yi bei she hui xue jia li jing han xian sheng ceng jing zai ren da she hui xue suo gong zuo"
     },
     {
         "hz": [
@@ -329,7 +338,8 @@
             "zidong",
             "shibie",
             "xitong"
-        ]
+        ],
+        "zu": "tu wei chu ru jing huo che si ji chi hai guan he fa de ka tong guo dian nao zi dong shi bie xi tong"
     },
     {
         "hz": [
@@ -357,7 +367,8 @@
             "chengshi",
             "chuangjian",
             "huodong"
-        ]
+        ],
+        "zu": "cheng qu de zhu duo wen ming dan wei ji ji can yu wen ming cheng shi chuang jian huo dong"
     },
     {
         "hz": [
@@ -381,7 +392,8 @@
             "riyi",
             "xianghu",
             "jiaozhi"
-        ]
+        ],
+        "zu": "zhong mei liang guo de jing ji li yi ye ri yi xiang hu jiao zhi"
     },
     {
         "hz": [
@@ -411,7 +423,8 @@
             "yongchu",
             "le",
             "leishui"
-        ]
+        ],
+        "zu": "zai chang de qing nian zhuan jia men de yan li ye yong chu le lei shui"
     },
     {
         "hz": [
@@ -435,7 +448,8 @@
             "xiande",
             "gewai",
             "wenxin"
-        ]
+        ],
+        "zu": "du dao zhe yang de duan luo jiu xian de ge wai wen xin"
     },
     {
         "hz": [
@@ -461,7 +475,8 @@
             "de",
             "xianshi",
             "zhenduixing"
-        ]
+        ],
+        "zu": "zhe san tiao yao qiu dou you hen qiang de xian shi zhen dui xing"
     },
     {
         "hz": [
@@ -489,7 +504,8 @@
             "jingcui",
             "de",
             "tongshi"
-        ]
+        ],
+        "zu": "zai ji xu lu zhi zhong guo jing ju yin pei xiang jing cui de tong shi"
     },
     {
         "hz": [
@@ -525,7 +541,8 @@
             "jiang",
             "tamen",
             "zhuahuo"
-        ]
+        ],
+        "zu": "e an quan ju xing dong fen dui zai cao cheng you yu e wai jiao bu yi ming gong zuo ren yuan jin xing mi mi jie tou shi jiang ta men zhua huo"
     },
     {
         "hz": [
@@ -549,7 +566,8 @@
             "fang",
             "mei",
             "hou"
-        ]
+        ],
+        "zu": "shi ji jiang ze min zhu xi qu nian cheng gong fang mei hou"
     },
     {
         "hz": [
@@ -573,7 +591,8 @@
             "tan",
             "yi",
             "tan"
-        ]
+        ],
+        "zu": "zou zhi qian wo de gen ta tan yi tan"
     },
     {
         "hz": [
@@ -597,7 +616,8 @@
             "he",
             "linchuang",
             "shiyan"
-        ]
+        ],
+        "zu": "ye bi xu zuo da liang de dong wu he lin chuang shi yan"
     },
     {
         "hz": [
@@ -633,7 +653,8 @@
             "falv",
             "chengxu",
             "banshi"
-        ]
+        ],
+        "zu": "ren min qun zhong dui jian cha ji guan fan ying qiang lie de wen ti shi bu yan ge an fa lv cheng xu ban shi"
     },
     {
         "hz": [
@@ -654,7 +675,7 @@
         "py": [
             "juhua",
             "hao",
-            "kexve",
+            "kexue",
             "weixing",
             "you",
             "liangke",
@@ -665,7 +686,8 @@
             "zi",
             "weixing",
             "zucheng"
-        ]
+        ],
+        "zu": "ju hua hao ke xue wei xing you liang ke neng du li fei xing de zi wei xing zu cheng"
     },
     {
         "hz": [
@@ -689,7 +711,8 @@
             "dedao",
             "le",
             "baozhang"
-        ]
+        ],
+        "zu": "gang ren de ge xiang quan yi hao wu yi wen di de dao le bao zhang"
     },
     {
         "hz": [
@@ -717,7 +740,8 @@
             "meiguo",
             "jinkou",
             "yuancailiao"
-        ]
+        ],
+        "zu": "yong yu han guo qi ye zai jin hou yi nian nei cong mei guo jin kou yuan cai liao"
     },
     {
         "hz": [
@@ -743,7 +767,8 @@
             "kongqian",
             "zhuangda",
             "qilai"
-        ]
+        ],
+        "zu": "geng shi cun tuan zhi bu de jing ji shi li kong qian zhuang da qi lai"
     },
     {
         "hz": [
@@ -773,7 +798,8 @@
             "de",
             "tongxun",
             "lianluo"
-        ]
+        ],
+        "zu": "dian nao wang luo de wen shi da da fang bian le ren men zhi jian de tong xun lian luo"
     },
     {
         "hz": [
@@ -805,7 +831,8 @@
             "jiefangjun",
             "de",
             "paizi"
-        ]
+        ],
+        "zu": "yan tu zhu jun ze da chu le you kun nan qing zhao jie fang jun de pai zi"
     },
     {
         "hz": [
@@ -831,7 +858,8 @@
             "di",
             "liaojie",
             "zhongguo"
-        ]
+        ],
+        "zu": "xi wang dong shi hui cheng yuan tong guo fang wen geng hao di liao jie zhong guo"
     },
     {
         "hz": [
@@ -851,13 +879,14 @@
             "zheli",
             "de",
             "quanwen",
-            "qve",
+            "que",
             "shi",
             "fangdong",
             "taitai",
             "de",
             "nver"
-        ]
+        ],
+        "zu": "dan zhe li de quan wen que shi fang dong tai tai de nv er"
     },
     {
         "hz": [
@@ -874,8 +903,8 @@
         ],
         "py": [
             "bushao",
-            "xvexiao",
-            "xvesheng",
+            "xuexiao",
+            "xuesheng",
             "de",
             "tiyu",
             "dabiao",
@@ -883,7 +912,8 @@
             "yi",
             "shangsheng",
             "dao"
-        ]
+        ],
+        "zu": "bu shao xue xiao xue sheng de ti yu da biao lv yi shang sheng dao"
     },
     {
         "hz": [
@@ -909,13 +939,14 @@
             "shangcan",
             "zheng",
             "zuo",
-            "zhuo",
+            "zhe",
             "lunyi",
             "huidao",
             "jiaxiang",
             "huguanxian",
             "dongshanhoucun"
-        ]
+        ],
+        "zu": "tui wu shi huai chuai yi deng shang can zheng zuo zhe lun yi hui dao jia xiang hu guan xian dong shan hou cun"
     },
     {
         "hz": [
@@ -937,7 +968,7 @@
         ],
         "py": [
             "jinri",
-            "guowuyuanxveweiweiyuanhui",
+            "guowuyuanxueweiweiyuanhui",
             "xiafa",
             "le",
             "xin",
@@ -948,10 +979,11 @@
             "juyou",
             "yanjiusheng",
             "biye",
-            "tongdengxveli",
+            "tongdengxueli",
             "renyuan",
             "shuoshi"
-        ]
+        ],
+        "zu": "jin ri guo wu yuan xue wei wei yuan hui xia fa le xin xiu ding de guan yu shou yu ju you yan jiu sheng bi ye tong deng xue li ren yuan shuo shi"
     },
     {
         "hz": [
@@ -975,7 +1007,8 @@
             "de",
             "wuxiang",
             "zhidu"
-        ]
+        ],
+        "zu": "tong shi jian li le bao zheng zhua hao jiao yu de wu xiang zhi du"
     },
     {
         "hz": [
@@ -993,7 +1026,7 @@
         "py": [
             "xinhuashe",
             "beijing",
-            "yveri",
+            "yueri",
             "dian",
             "zonghe",
             "ben",
@@ -1001,7 +1034,8 @@
             "zhuwai",
             "jizhe",
             "baodao"
-        ]
+        ],
+        "zu": "xin hua she bei jing yue ri dian zong he ben she zhu wai ji zhe bao dao"
     },
     {
         "hz": [
@@ -1033,7 +1067,8 @@
             "gongsi",
             "qiantou",
             "chengban"
-        ]
+        ],
+        "zu": "wu shu hui yuan zhi yi ji wu shu chuan bo deng ni you gai gong si qian tou cheng ban"
     },
     {
         "hz": [
@@ -1075,7 +1110,8 @@
             "er",
             "lai",
             "de"
-        ]
+        ],
+        "zu": "ji zhui dong wu de ji zhui gu jiu shi you yuan shi ji suo dong wu de zhe zhong bang zhuang rou zhi ji suo gou zao yan hua er lai de"
     },
     {
         "hz": [
@@ -1105,7 +1141,8 @@
             "daxing",
             "shirou",
             "konglong"
-        ]
+        ],
+        "zu": "ju zhuan jia duan ding wei yi nian qian zhu luo ji shi qi de da xing shi rou kong long"
     },
     {
         "hz": [
@@ -1145,7 +1182,8 @@
             "lingyu",
             "jinxing",
             "gaige"
-        ]
+        ],
+        "zu": "xin de guo jia ling dao ren de shou yao ren wu shi yao dui ren min sheng huo de ge ge ling yu jin xing gai ge"
     },
     {
         "hz": [
@@ -1164,14 +1202,15 @@
             "bu",
             "cong",
             "genbenshang",
-            "jiejve",
+            "jiejue",
             "faren",
             "zousi",
             "he",
             "neiwai",
             "goujie",
             "zousi"
-        ]
+        ],
+        "zu": "bu cong gen ben shang jie jue fa ren zou si he nei wai gou jie zou si"
     },
     {
         "hz": [
@@ -1195,7 +1234,8 @@
             "de",
             "chubu",
             "gousi"
-        ]
+        ],
+        "zu": "ta hai jie shao le zheng fu zong bu de chu bu gou si"
     },
     {
         "hz": [
@@ -1220,12 +1260,13 @@
             "zhuti",
             "huodong",
             "jiezhi",
-            "yveri",
+            "yueri",
             "yin",
             "lai",
             "youkewan",
             "renci"
-        ]
+        ],
+        "zu": "e luo si shang pin zhan xiao deng zhu ti huo dong jie zhi yue ri yin lai you ke wan ren ci"
     },
     {
         "hz": [
@@ -1251,7 +1292,8 @@
             "de",
             "xianghu",
             "jiaohuan"
-        ]
+        ],
+        "zu": "shi zhi liang zhong bu tong li lv xing shi zhi jian de xiang hu jiao huan"
     },
     {
         "hz": [
@@ -1287,7 +1329,8 @@
             "buchong",
             "xieding",
             "zhihou"
-        ]
+        ],
+        "zu": "zhe shi ji nian zhong ha guo jie xie ding he nian zhong ha guo jie bu chong xie ding zhi hou"
     },
     {
         "hz": [
@@ -1317,7 +1360,8 @@
             "le",
             "zhongyao",
             "jianghua"
-        ]
+        ],
+        "zu": "shu ji chu shu ji wei jian xing zai jin tian de hui shang zuo le zhong yao jiang hua"
     },
     {
         "hz": [
@@ -1341,7 +1385,8 @@
             "he",
             "caiwu",
             "baogao"
-        ]
+        ],
+        "zu": "yi ji xiu gai ya zu lian zhang cheng de bao gao he cai wu bao gao"
     },
     {
         "hz": [
@@ -1369,7 +1414,8 @@
             "de",
             "zhongyao",
             "biaozhi"
-        ]
+        ],
+        "zu": "ou yuan de dan sheng shi ou zhou yi ti hua shen ru fa zhan de zhong yao biao zhi"
     },
     {
         "hz": [
@@ -1405,7 +1451,8 @@
             "hen",
             "da",
             "yingxiang"
-        ]
+        ],
+        "zu": "xiang zhen qi ye de ren he shan shi dou hui gei guo min jing ji he she hui fa zhan zao cheng hen da ying xiang"
     },
     {
         "hz": [
@@ -1451,7 +1498,8 @@
             "jiyu",
             "gaodu",
             "pingjia"
-        ]
+        ],
+        "zu": "zhuan jia men dui gai xiao zai tan suo ke yan cheng guo zhuan hua xin ji zhi fang mian qu de de zhe yi cheng ji ji yu gao du ping jia"
     },
     {
         "hz": [
@@ -1479,7 +1527,8 @@
             "yudao",
             "yanzhong",
             "tiaozhan"
-        ]
+        ],
+        "zu": "yi gui mo kuo zhang wei zhu de jing ji zeng zhang fang shi yu dao yan zhong tiao zhan"
     },
     {
         "hz": [
@@ -1518,12 +1567,13 @@
             "suitong",
             "teweihui",
             "zhuxi",
-            "batele",
+            "batelei",
             "qianwang",
             "yilake",
             "jinxing",
             "fangwen"
-        ]
+        ],
+        "zu": "lian he guo te wei hui zhong de zhong guo cheng yuan zhou fei jiang yu ben zhou mo sui tong te wei hui zhu xi ba te lei qian wang yi la ke jin xing fang wen"
     },
     {
         "hz": [
@@ -1542,7 +1592,7 @@
         "py": [
             "shi",
             "suoyou",
-            "xvexiao",
+            "xuexiao",
             "de",
             "meige",
             "ban",
@@ -1551,7 +1601,8 @@
             "yi",
             "tai",
             "diannao"
-        ]
+        ],
+        "zu": "shi suo you xue xiao de mei ge ban dou yong you yi tai dian nao"
     },
     {
         "hz": [
@@ -1583,7 +1634,8 @@
             "yulun",
             "yindao",
             "zuoyong"
-        ]
+        ],
+        "zu": "wei gai ge kai fang he she hui zhu yi xian dai hua jian she fa hui le zhong yao de yu lun yin dao zuo yong"
     },
     {
         "hz": [
@@ -1629,7 +1681,8 @@
             "lvke",
             "zui",
             "youli"
-        ]
+        ],
+        "zu": "er shi neng jiang bei jing zhan lv ke lie che de shi fa he zhong dao shi jian tiao zheng dao dui lv ke zui you li"
     },
     {
         "hz": [
@@ -1648,7 +1701,7 @@
             "\u70b9"
         ],
         "py": [
-            "yveri",
+            "yueri",
             "de",
             "gushi",
             "zonghe",
@@ -1661,7 +1714,8 @@
             "shangsheng",
             "le",
             "dian"
-        ]
+        ],
+        "zu": "yue ri de gu shi zong he zhi shu bi qian ge jiao yi ri shang sheng le dian"
     },
     {
         "hz": [
@@ -1679,13 +1733,14 @@
             "wanshang",
             "zhuchi",
             "huiyi",
-            "jiejve",
+            "jiejue",
             "shigong",
             "yudao",
             "de",
             "gezhong",
             "wenti"
-        ]
+        ],
+        "zu": "wan shang zhu chi hui yi jie jue shi gong yu dao de ge zhong wen ti"
     },
     {
         "hz": [
@@ -1713,7 +1768,8 @@
             "ren",
             "bian",
             "yaoya"
-        ]
+        ],
+        "zu": "dan shi bu xiang cong qian na yang yi ti ri ben ren bian yao ya"
     },
     {
         "hz": [
@@ -1729,15 +1785,16 @@
         ],
         "py": [
             "xingzheng",
-            "xveyuan",
+            "xueyuan",
             "shouxian",
             "yao",
             "jianchi",
-            "zhengqve",
+            "zhengque",
             "de",
-            "banxve",
+            "banxue",
             "fangxiang"
-        ]
+        ],
+        "zu": "xing zheng xue yuan shou xian yao jian chi zheng que de ban xue fang xiang"
     },
     {
         "hz": [
@@ -1761,7 +1818,8 @@
             "hu",
             "huanjing",
             "zhizhong"
-        ]
+        ],
+        "zu": "pai lie you xu di mai cang yu qian hu huan jing zhi zhong"
     },
     {
         "hz": [
@@ -1784,8 +1842,9 @@
             "di",
             "fang",
             "zai",
-            "nar"
-        ]
+            "naer"
+        ],
+        "zu": "ruo gan shou gao hai wan zheng wu sun di fang zai na er"
     },
     {
         "hz": [
@@ -1811,7 +1870,8 @@
             "yige",
             "hao",
             "gongzuo"
-        ]
+        ],
+        "zu": "ta wan quan ke yi zai shang hai fen de yi ge hao gong zuo"
     },
     {
         "hz": [
@@ -1839,7 +1899,8 @@
             "juxing",
             "shounao",
             "huiwu"
-        ]
+        ],
+        "zu": "zhong ya wu guo zai tu ku man si tan shou du a shen ha ba de zai ci ju xing shou nao hui wu"
     },
     {
         "hz": [
@@ -1865,7 +1926,8 @@
             "baifenzhishiyi",
             "he",
             "baifenzhiershidianjiu"
-        ]
+        ],
+        "zu": "xiao shou mian ji fen bie bi shang nian tong qi zeng zhang bai fen zhi shi yi he bai fen zhi er shi dian jiu"
     },
     {
         "hz": [
@@ -1891,7 +1953,8 @@
             "tuchu",
             "de",
             "diwei"
-        ]
+        ],
+        "zu": "jian chi ba jing shen wen ming jian she fang zai geng jia tu chu de di wei"
     },
     {
         "hz": [
@@ -1915,7 +1978,8 @@
             "de",
             "zibei",
             "xinli"
-        ]
+        ],
+        "zu": "shen ti ai xiao you hui jia zhong huan er de zi bei xin li"
     },
     {
         "hz": [
@@ -1943,7 +2007,8 @@
             "shishi",
             "tudi",
             "siyouhua"
-        ]
+        ],
+        "zu": "meng gu ling yi fan dui dang chuan tong tong yi dang ze fan dui zheng fu shi shi tu di si you hua"
     },
     {
         "hz": [
@@ -1977,7 +2042,8 @@
             "yishang",
             "chuxu",
             "zhuangui"
-        ]
+        ],
+        "zu": "gai xing di an men fen li chu shuai xian zai gong shang yin hang xi tong kai she le yi ge shi wan yuan yi shang chu xu zhuan gui"
     },
     {
         "hz": [
@@ -2005,7 +2071,8 @@
             "hai",
             "bugou",
             "shuxi"
-        ]
+        ],
+        "zu": "ta men dui wo tou shang de shui hui hai bu gou shu xi"
     },
     {
         "hz": [
@@ -2067,7 +2134,8 @@
             "de",
             "fufang",
             "chanpin"
-        ]
+        ],
+        "zu": "xiang zui jin shang shi de an fen qu ma duo pian jiu shi you a pian lei he fei zai ti lei shi yong zui jiu de yan suan qu ma duo he dui yi xian an ji fen zu he zai yi qi de fu fang chan pin"
     },
     {
         "hz": [
@@ -2101,13 +2169,14 @@
             "jiazu",
             "zai",
             "nijialagua",
-            "chang",
+            "zhang",
             "da",
             "yunian",
             "de",
             "ducai",
             "tongzhi"
-        ]
+        ],
+        "zu": "sang jie zhen ling dao de ren min ge ming tui fan le suo mo cha jia zu zai ni jia la gua zhang da yu nian de du cai tong zhi"
     },
     {
         "hz": [
@@ -2125,13 +2194,14 @@
             "shi",
             "nian",
             "lai",
-            "xveshujie",
+            "xueshujie",
             "dui",
             "qinyong",
             "yanjiu",
             "de",
             "chengguo"
-        ]
+        ],
+        "zu": "shi nian lai xue shu jie dui qin yong yan jiu de cheng guo"
     },
     {
         "hz": [
@@ -2165,7 +2235,8 @@
             "jingxuan",
             "chulai",
             "de"
-        ]
+        ],
+        "zu": "zhe shi zuo zhe cong kang zhan yi lai da liang zhong duan pian xiao shuo ji san wen zhong jing xuan chu lai de"
     },
     {
         "hz": [
@@ -2183,13 +2254,14 @@
             "ta",
             "de",
             "muqin",
-            "qve",
+            "que",
             "zai",
             "xingqiliu",
             "wanshang",
             "anshi",
             "daoda"
-        ]
+        ],
+        "zu": "ta de mu qin que zai xing qi liu wan shang an shi dao da"
     },
     {
         "hz": [
@@ -2219,7 +2291,8 @@
             "shehui",
             "wenhua",
             "xianxiang"
-        ]
+        ],
+        "zu": "ye zhu jian cong yi zhong ji shu xian xiang zhuan bian wei yi zhong she hui wen hua xian xiang"
     },
     {
         "hz": [
@@ -2257,7 +2330,8 @@
             "liang",
             "da",
             "zhongxin"
-        ]
+        ],
+        "zu": "you qi ji zhong zai fa zhan zi ben zhu yi jing ji he jian li zi ben zhu yi de jun zhu li xian zhi du liang da zhong xin"
     },
     {
         "hz": [
@@ -2281,7 +2355,8 @@
             "wenxin",
             "de",
             "jia"
-        ]
+        ],
+        "zu": "hai zi men you you le yi ge wen xin de jia"
     },
     {
         "hz": [
@@ -2317,7 +2392,8 @@
             "de",
             "youyi",
             "kaoyan"
-        ]
+        ],
+        "zu": "cun li ren hui zi hao di jiang qi na duan wang shi si hu shi da zi ran de you yi kao yan"
     },
     {
         "hz": [
@@ -2341,7 +2417,8 @@
             "fabiao",
             "lunwen",
             "pian"
-        ]
+        ],
+        "zu": "gai xiao jiao shi yi zai bao kan shang fa biao lun wen pian"
     },
     {
         "hz": [
@@ -2369,7 +2446,8 @@
             "zuo",
             "anquan",
             "chuli"
-        ]
+        ],
+        "zu": "bing dui yi zai lu mian shang de qi you zuo an quan chu li"
     },
     {
         "hz": [
@@ -2395,7 +2473,8 @@
             "mijixing",
             "de",
             "chanye"
-        ]
+        ],
+        "zu": "jiao yu zhi jie jin ru yi zhi zhu dao zhi li zi ben mi ji xing de chan ye"
     },
     {
         "hz": [
@@ -2421,7 +2500,8 @@
             "zhe",
             "tiao",
             "dushe"
-        ]
+        ],
+        "zu": "yin ci wo bu xiang li ke xiang fu ji du zhe tiao du she"
     },
     {
         "hz": [
@@ -2453,7 +2533,8 @@
             "lishi",
             "zuigao",
             "shuiping"
-        ]
+        ],
+        "zu": "qu nian zhong bai de xiao shou e he li run de zeng fu jun chuang li shi zui gao shui ping"
     },
     {
         "hz": [
@@ -2487,7 +2568,8 @@
             "jiaoliu",
             "yu",
             "hezuo"
-        ]
+        ],
+        "zu": "bi li shi yuan jin yi bu jia qiang liang guo zheng fu zhi jian he yi hui zhi jian de jiao liu yu he zuo"
     },
     {
         "hz": [
@@ -2517,7 +2599,8 @@
             "zhong",
             "de",
             "zhongyaoxing"
-        ]
+        ],
+        "zu": "zou jia hua hai te bie qiang diao gui hua zai jian she gong zuo zhong de zhong yao xing"
     },
     {
         "hz": [
@@ -2555,7 +2638,8 @@
             "zeren",
             "yu",
             "yiwu"
-        ]
+        ],
+        "zu": "hai zi men dui yu yi ge gong min ying xiang de quan li he ying jin de ze ren yu yi wu"
     },
     {
         "hz": [
@@ -2579,7 +2663,8 @@
             "ye",
             "bu",
             "dong"
-        ]
+        ],
+        "zu": "ni you nan dao ni yi dian hao dai ye bu dong"
     },
     {
         "hz": [
@@ -2597,15 +2682,16 @@
         "py": [
             "ta",
             "bu",
-            "zijve",
+            "zijue",
             "de",
             "xuanzhuan",
             "le",
-            "jvede",
+            "juede",
             "huansan",
             "le",
             "shenqu"
-        ]
+        ],
+        "zu": "ta bu zi jue de xuan zhuan le jue de huan san le shen qu"
     },
     {
         "hz": [
@@ -2629,7 +2715,8 @@
             "huo",
             "jiujing",
             "yinliao"
-        ]
+        ],
+        "zu": "jin zhi yong ta lai gou mai xiang yan huo jiu jing yin liao"
     },
     {
         "hz": [
@@ -2653,7 +2740,8 @@
             "tigao",
             "duili",
             "qilai"
-        ]
+        ],
+        "zu": "geng bu neng ba kuo da yu ti gao dui li qi lai"
     },
     {
         "hz": [
@@ -2679,7 +2767,8 @@
             "de",
             "jiuye",
             "jizhi"
-        ]
+        ],
+        "zu": "jia kuai jian li yu she hui zhu yi shi chang jing ji xiang shi ying de jiu ye ji zhi"
     },
     {
         "hz": [
@@ -2729,7 +2818,7 @@
             "lingyuan",
             "benbao",
             "zhenjiang",
-            "yve",
+            "yue",
             "ri",
             "dian",
             "lishi",
@@ -2745,7 +2834,8 @@
             "jin",
             "mingren",
             "muzang"
-        ]
+        ],
+        "zu": "xin hua she ji zhe song zhen ping she zhen jiang jian cheng yi pi ming ren mu zang ling yuan ben bao zhen jiang yue ri dian li shi wen hua ming cheng jiang su sheng zhen jiang shi shi fen zhu yi xiu fu bao hu gu jin ming ren mu zang"
     },
     {
         "hz": [
@@ -2781,7 +2871,8 @@
             "de",
             "zhizhen",
             "ren"
-        ]
+        ],
+        "zu": "dan wo hai ji de bi er ao li fu de fu qin shi ge zou jia chuan hu de zhi zhen ren"
     },
     {
         "hz": [
@@ -2809,7 +2900,8 @@
             "he",
             "xizao",
             "ba"
-        ]
+        ],
+        "zu": "dang nian bai qiu en ye yi ding chang lai zhe tiao he xi zao ba"
     },
     {
         "hz": [
@@ -2831,15 +2923,16 @@
             "zhurenyishi",
             "shuailing",
             "de",
-            "jiangxvezu",
+            "jiangxuezu",
             "yu",
-            "wuyvesiri",
+            "wuyuesiri",
             "dao",
             "liuri",
             "fu",
             "qujing",
-            "jiangxve"
-        ]
+            "jiangxue"
+        ],
+        "zu": "fang rui cai zhu ren yi shi shuai ling de jiang xue zu yu wu yue si ri dao liu ri fu qu jing jiang xue"
     },
     {
         "hz": [
@@ -2865,11 +2958,12 @@
             "jianli",
             "de",
             "erji",
-            "xveke",
+            "xueke",
             "xiju",
-            "xiquxve",
+            "xiquxue",
             "zhixia"
-        ]
+        ],
+        "zu": "you bi yao zai guo jia pi zhun jian li de er ji xue ke xi ju xi qu xue zhi xia"
     },
     {
         "hz": [
@@ -2893,7 +2987,8 @@
             "guren",
             "de",
             "mingzi"
-        ]
+        ],
+        "zu": "wo zhe shi hou nao dai li quan shi gu ren de ming zi"
     },
     {
         "hz": [
@@ -2923,7 +3018,8 @@
             "wukezhengyi",
             "de",
             "zhuquan"
-        ]
+        ],
+        "zu": "qiang diao a gen ting dui ma er wei na si qun dao ji qi zhou wei hai yu yong you wu ke zheng yi de zhu quan"
     },
     {
         "hz": [
@@ -2946,10 +3042,11 @@
             "wang",
             "peixun",
             "de",
-            "beijingdianxinxvexiaodui",
+            "beijingdianxinxuexiaodui",
             "chengji",
             "tuchu"
-        ]
+        ],
+        "zu": "bei jing zui zao kai zhan duan wang pei xun de bei jing dian xin xue xiao dui cheng ji tu chu"
     },
     {
         "hz": [
@@ -2973,7 +3070,8 @@
             "yizhong",
             "zanshi",
             "kunnan"
-        ]
+        ],
+        "zu": "xia gang zhi gong yan qian de kun nan zhi shi yi zhong zan shi kun nan"
     },
     {
         "hz": [
@@ -2997,7 +3095,8 @@
             "de",
             "guanxi",
             "deng"
-        ]
+        ],
+        "zu": "huan jing yu ke chi xu fa zhan zhi jian de guan xi deng"
     },
     {
         "hz": [
@@ -3031,9 +3130,10 @@
             "zhanshi",
             "ziji",
             "de",
-            "jvehao",
+            "juehao",
             "shiji"
-        ]
+        ],
+        "zu": "er shi jie bei zu qiu sai qia qia gei wang luo ti gong le yi ge zhan shi zi ji de jue hao shi ji"
     },
     {
         "hz": [
@@ -3073,7 +3173,8 @@
             "da",
             "de",
             "linghuoxing"
-        ]
+        ],
+        "zu": "zhe jiang shi ke lin dun zheng fu zai chu li nan ya he jun bei jing sai wen ti shang you geng da de ling huo xing"
     },
     {
         "hz": [
@@ -3102,10 +3203,11 @@
             "changren",
             "zhixia",
             "de",
-            "qvexian",
+            "quexian",
             "he",
             "exi"
-        ]
+        ],
+        "zu": "bu guo ye mei you shi ta ju yu chang ren zhi xia de que xian he e xi"
     },
     {
         "hz": [
@@ -3143,7 +3245,8 @@
             "deng",
             "zhuduo",
             "youdian"
-        ]
+        ],
+        "zu": "zhen jiu liao fa yi qi guang fan de ying yong fan wei he ji wei shao jian de fu zuo yong deng zhu duo you dian"
     },
     {
         "hz": [
@@ -3171,7 +3274,8 @@
             "duo",
             "de",
             "wuzhicaifu"
-        ]
+        ],
+        "zu": "er qie zui zhong hui wei she hui chuang zao chu geng duo de wu zhi cai fu"
     },
     {
         "hz": [
@@ -3197,7 +3301,8 @@
             "shang",
             "le",
             "zui"
-        ]
+        ],
+        "zu": "qi lao ren yu tian you tai tai you shou shang le zui"
     },
     {
         "hz": [
@@ -3229,7 +3334,8 @@
             "xuanzhuan",
             "de",
             "zidian"
-        ]
+        ],
+        "zu": "huo a bu en di ya ba zhe zhong ji xie she xiang cheng yi ben xuan zhuan de zi dian"
     },
     {
         "hz": [
@@ -3263,7 +3369,8 @@
             "de",
             "xin",
             "moshi"
-        ]
+        ],
+        "zu": "ju you xian zhu de ke chi xu fa zhan you shi de kuang shan fu ken xi tong gong cheng de xin mo shi"
     },
     {
         "hz": [
@@ -3287,7 +3394,8 @@
             "zhishi",
             "de",
             "nengli"
-        ]
+        ],
+        "zu": "shi fou ju bei zhang wo bu duan tui chen chu xin de zhi shi de neng li"
     },
     {
         "hz": [
@@ -3319,7 +3427,7 @@
         "py": [
             "zhongyang",
             "minzu",
-            "yvetuan",
+            "yuetuan",
             "yingyao",
             "fangwen",
             "aodili",
@@ -3333,7 +3441,7 @@
             "chenggong",
             "xinhuashe",
             "beijing",
-            "yve",
+            "yue",
             "ri",
             "dian",
             "zai",
@@ -3341,7 +3449,8 @@
             "xinchun",
             "jiajie",
             "daolaizhiji"
-        ]
+        ],
+        "zu": "zhong yang min zu yue tuan ying yao fang wen ao di li jiang ze min zhi he ci zhu yan chu yuan man cheng gong xin hua she bei jing yue ri dian zai hu nian xin chun jia jie dao lai zhi ji"
     },
     {
         "hz": [
@@ -3359,7 +3468,7 @@
             "\u788e\u7247"
         ],
         "py": [
-            "kexvejia",
+            "kexuejia",
             "renwei",
             "ta",
             "shi",
@@ -3371,7 +3480,8 @@
             "chansheng",
             "de",
             "suipian"
-        ]
+        ],
+        "zu": "ke xue jia ren wei ta shi huo xing yu xiao xing xing peng zhuang shi chan sheng de sui pian"
     },
     {
         "hz": [
@@ -3399,7 +3509,8 @@
             "zhi",
             "de",
             "chengben"
-        ]
+        ],
+        "zu": "fang jia zhi zhong yin han you duo zhong chang ren suo bu zhi de cheng ben"
     },
     {
         "hz": [
@@ -3433,7 +3544,8 @@
             "huichen",
             "de",
             "bolichuang"
-        ]
+        ],
+        "zu": "mei lai de ji fang xia er deng che xiang na shan man shi hui chen de bo li chuang"
     },
     {
         "hz": [
@@ -3459,7 +3571,8 @@
             "ta",
             "shang",
             "nanji"
-        ]
+        ],
+        "zu": "ru guo you yi tian hai xu yao wo ta shang nan ji"
     },
     {
         "hz": [
@@ -3485,7 +3598,8 @@
             "he",
             "gonggong",
             "jiari"
-        ]
+        ],
+        "zu": "ba zhe yi tian ding wei nan fei qing nian jie he gong gong jia ri"
     },
     {
         "hz": [
@@ -3511,7 +3625,8 @@
             "yongyuan",
             "baochi",
             "yousheng"
-        ]
+        ],
+        "zu": "bu neng yao qiu suo you guo you qi ye dou yong yuan bao chi you sheng"
     },
     {
         "hz": [
@@ -3535,7 +3650,8 @@
             "duo",
             "ge",
             "fengongsi"
-        ]
+        ],
+        "zu": "heng an ji tuan zai quan guo yi yong you duo ge fen gong si"
     },
     {
         "hz": [
@@ -3554,7 +3670,7 @@
         ],
         "py": [
             "wo",
-            "jvede",
+            "juede",
             "zhe",
             "wei",
             "chunjie",
@@ -3565,7 +3681,8 @@
             "shenyuan",
             "de",
             "haoren"
-        ]
+        ],
+        "zu": "wo jue de zhe wei chun jie ru mei you yang guang de shen yuan de hao ren"
     },
     {
         "hz": [
@@ -3595,7 +3712,8 @@
             "konglong",
             "dongwuqun",
             "zhijian"
-        ]
+        ],
+        "zu": "ta jie yu yun nan lu feng kong long dong wu qun he si chuan zi gong kong long dong wu qun zhi jian"
     },
     {
         "hz": [
@@ -3625,7 +3743,8 @@
             "sifabumen",
             "de",
             "hezuo"
-        ]
+        ],
+        "zu": "hu yu shang shu guo jia jia qiang tong a la bo guo jia an quan he si fa bu men de he zuo"
     },
     {
         "hz": [
@@ -3641,7 +3760,7 @@
             "\u6444\u6c0f\u5ea6"
         ],
         "py": [
-            "yve",
+            "yue",
             "ri",
             "de",
             "wendu",
@@ -3651,7 +3770,8 @@
             "zhi",
             "lingxia",
             "sheshidu"
-        ]
+        ],
+        "zu": "yue ri de wen du ke neng yi jiang zhi ling xia she shi du"
     },
     {
         "hz": [
@@ -3674,7 +3794,7 @@
             "\u5907\u5fd8\u5f55"
         ],
         "py": [
-            "molemu",
+            "moleimu",
             "zai",
             "huijian",
             "zhong",
@@ -3691,7 +3811,8 @@
             "neirong",
             "de",
             "beiwanglu"
-        ]
+        ],
+        "zu": "mo lei mu zai hui jian zhong xiang xin jiao jiao pai qiu fan ti gong le yi fen bao kuo dian nei rong de bei wang lu"
     },
     {
         "hz": [
@@ -3731,7 +3852,8 @@
             "yi",
             "bu",
             "lizuo"
-        ]
+        ],
+        "zu": "shi wang zhong yu ji zhu ming xiao shuo kang lian ying xiong san bu qu zhi yi de zhao shang zhi zhi hou de you yi bu li zuo"
     },
     {
         "hz": [
@@ -3765,7 +3887,8 @@
             "zhongyao",
             "bianhua",
             "shiduan"
-        ]
+        ],
+        "zu": "zhe yi dai zuo jia cheng zhang qi zheng zhi dang dai zhong guo she hui de zhong yao bian hua shi duan"
     },
     {
         "hz": [
@@ -3791,7 +3914,8 @@
             "tichu",
             "cizhi",
             "de"
-        ]
+        ],
+        "zu": "ta shi ri yu qian zheng fu yi qi ti chu ci zhi de"
     },
     {
         "hz": [
@@ -3831,7 +3955,8 @@
             "chengdu",
             "de",
             "fusu"
-        ]
+        ],
+        "zu": "cong er shi de zhe zhong zai xi fang guo jia ying xiang ri jian shuai ruo de si chao chu xian le mou zhong cheng du de fu su"
     },
     {
         "hz": [
@@ -3873,7 +3998,8 @@
             "kangyi",
             "shiwei",
             "huodong"
-        ]
+        ],
+        "zu": "da pi fan dui han sen zhong zu zhu yi de mo er ben ren wu shi qian jiu hui ju zai shi zheng ting wai ju xing kang yi shi wei huo dong"
     },
     {
         "hz": [
@@ -3907,7 +4033,8 @@
             "feichang",
             "zhi",
             "gao"
-        ]
+        ],
+        "zu": "er zhong guo nv dui di er shuang da qin yi yuan tang yong shu de na fen gai lv ye fei chang zhi gao"
     },
     {
         "hz": [
@@ -3937,7 +4064,8 @@
             "gongsi",
             "de",
             "zongjingli"
-        ]
+        ],
+        "zu": "ke yi wei ming yang zhong wai de guo you da gong si de zong jing li"
     },
     {
         "hz": [
@@ -3975,7 +4103,8 @@
             "wengu",
             "de",
             "jiating"
-        ]
+        ],
+        "zu": "ta hui you ci de dao yi fen geng wei shen chen de ai qing he yi ge geng wei wen gu de jia ting"
     },
     {
         "hz": [
@@ -4003,7 +4132,8 @@
             "guofang",
             "jiaoyu",
             "duben"
-        ]
+        ],
+        "zu": "zhe jiang sheng guo fang jiao yu wei yuan hui bian xie le yi ben guo fang jiao yu du ben"
     },
     {
         "hz": [
@@ -4027,7 +4157,8 @@
             "biande",
             "geng",
             "hao"
-        ]
+        ],
+        "zu": "shi wo men you xin xin ba sheng huo bian de geng hao"
     },
     {
         "hz": [
@@ -4061,7 +4192,8 @@
             "ye",
             "baolu",
             "chulai"
-        ]
+        ],
+        "zu": "jing cha guan yuan tong guo shen xian xia fan yu qi ye xiang hu li yong de chou wen ye bao lu chu lai"
     },
     {
         "hz": [
@@ -4081,11 +4213,12 @@
             "wangjiu",
             "ma",
             "qia",
-            "zhuo",
+            "zhe",
             "zhitouzi",
             "xi",
             "tuiqiao"
-        ]
+        ],
+        "zu": "hou lai wang jiu ma qia zhe zhi tou zi xi tui qiao"
     },
     {
         "hz": [
@@ -4145,7 +4278,8 @@
             "zi",
             "buke",
             "tidai"
-        ]
+        ],
+        "zu": "ren shi bu ke ti dai cheng dan bu ke ti dai zhong yang shi yan hua ju yuan dao yan cha ming zhe jiang ze min zong shu ji bu jiu qian tan dao hua ju shi yong le si ge zi bu ke ti dai"
     },
     {
         "hz": [
@@ -4171,7 +4305,8 @@
             "zhongfang",
             "zizhu",
             "guanli"
-        ]
+        ],
+        "zu": "da ya wan he dian zhan zai nian quan mian shi xian le zhong fang zi zhu guan li"
     },
     {
         "hz": [
@@ -4223,7 +4358,8 @@
             "diyiben",
             "xitong",
             "zhuzuo"
-        ]
+        ],
+        "zu": "yao kai jian he yu tong shen zhu bian de xi fang nong ye jing ji si xiang zhong guo wu zi chu ban she chu ban shi wo guo you guan xi fang nong ye jing ji si xiang yan jiu de di yi ben xi tong zhu zuo"
     },
     {
         "hz": [
@@ -4252,8 +4388,9 @@
             "sheng",
             "sihu",
             "reng",
-            "bujveyuer"
-        ]
+            "bujueyuer"
+        ],
+        "zu": "zhe qi shi nian xiang che shan gu de ding dang de fu zao sheng si hu reng bu jue yu er"
     },
     {
         "hz": [
@@ -4277,7 +4414,8 @@
             "de",
             "jiuye",
             "gangwei"
-        ]
+        ],
+        "zu": "wei fen liu zhi gong kai pi le xin de jiu ye gang wei"
     },
     {
         "hz": [
@@ -4305,7 +4443,8 @@
             "zhu",
             "xuan",
             "quyu"
-        ]
+        ],
+        "zu": "zhong deng fa da cheng shi shi nan shi fu zhuang zhuan mai dian de zhu xuan qu yu"
     },
     {
         "hz": [
@@ -4340,8 +4479,9 @@
             "lingyu",
             "yitihua",
             "de",
-            "tiaoyve"
-        ]
+            "tiaoyue"
+        ],
+        "zu": "e bai ha ji qian shu le guan yu jia shen jing ji he ren wen ling yu yi ti hua de tiao yue"
     },
     {
         "hz": [
@@ -4383,7 +4523,8 @@
             "yu",
             "siji",
             "jiuchan"
-        ]
+        ],
+        "zu": "zhi jian bu yuan chu yi liang chu zu che shang you liang ming xing ji ke yi de nan zi zheng zai yu si ji jiu chan"
     },
     {
         "hz": [
@@ -4423,7 +4564,8 @@
             "hexin",
             "de",
             "dangzhongyang"
-        ]
+        ],
+        "zu": "biao shi jian xin quan guo jun min zhi yao geng jia jin mi tuan jie zai yi jiang ze min tong zhi wei he xin de dang zhong yang"
     },
     {
         "hz": [
@@ -4451,7 +4593,8 @@
             "hushi",
             "de",
             "wenti"
-        ]
+        ],
+        "zu": "shi mei ge you yuan jian de qi ye dou bu rong hu shi de wen ti"
     },
     {
         "hz": [
@@ -4481,7 +4624,8 @@
             "de",
             "wenti",
             "shi"
-        ]
+        ],
+        "zu": "zai hui da jin hou san nian shi jie jing ji fa zhan qian jing de wen ti shi"
     },
     {
         "hz": [
@@ -4513,7 +4657,8 @@
             "caifang",
             "shi",
             "biaoshi"
-        ]
+        ],
+        "zu": "ji jiang fang hua de fa guo wai zhang yu bei er wei de li na jin tian jie shou zhong guo ji zhe cai fang shi biao shi"
     },
     {
         "hz": [
@@ -4539,7 +4684,8 @@
             "huanjing",
             "wei",
             "daijia"
-        ]
+        ],
+        "zu": "jian chi fa zhan sheng chan bu yi po huai sheng tai huan jing wei dai jia"
     },
     {
         "hz": [
@@ -4569,7 +4715,8 @@
             "he",
             "zhengce",
             "guifan"
-        ]
+        ],
+        "zu": "er shi zhi ding yi xi lie fu he shi chang jing ji gui lv de fa lv he zheng ce gui fan"
     },
     {
         "hz": [
@@ -4586,14 +4733,15 @@
         "py": [
             "shizhengfu",
             "jingguo",
-            "kexve",
+            "kexue",
             "er",
             "zhenmi",
             "de",
             "diaocha",
             "he",
             "fenxi"
-        ]
+        ],
+        "zu": "shi zheng fu jing guo ke xue er zhen mi de diao cha he fen xi"
     },
     {
         "hz": [
@@ -4623,7 +4771,8 @@
             "qiye",
             "de",
             "weituo"
-        ]
+        ],
+        "zu": "ti yu zhong jie gong si jie shou lai zi ti yu guan li bu men he qi ye de wei tuo"
     },
     {
         "hz": [
@@ -4659,7 +4808,8 @@
             "le",
             "chongfen",
             "kending"
-        ]
+        ],
+        "zu": "nong ye bu fu bu zhang liu cheng guo dui zhong guo nong ke yuan qu de de cheng jiu ji yu le chong fen ken ding"
     },
     {
         "hz": [
@@ -4689,7 +4839,8 @@
             "fengqu",
             "di",
             "shuo"
-        ]
+        ],
+        "zu": "huan sheng xiao yu zhong de wo shou te xie fu tu pian zhang ta feng qu di shuo"
     },
     {
         "hz": [
@@ -4721,7 +4872,8 @@
             "ni",
             "tiao",
             "tu"
-        ]
+        ],
+        "zu": "zhu gai cun xiang gan bu ceng yang sheng yu cun min yi dao wa ni tiao tu"
     },
     {
         "hz": [
@@ -4749,7 +4901,8 @@
             "gongzuo",
             "ganggang",
             "qidong"
-        ]
+        ],
+        "zu": "you fan mu han xian sheng qian tou de zhong guo yin shua bo wu guan jian she chou bei gong zuo gang gang qi dong"
     },
     {
         "hz": [
@@ -4766,7 +4919,7 @@
         ],
         "py": [
             "shouzhu",
-            "xvesheng",
+            "xuesheng",
             "daibiao",
             "xiang",
             "quanshi",
@@ -4775,7 +4928,8 @@
             "zinv",
             "fachu",
             "changyi"
-        ]
+        ],
+        "zu": "shou zhu xue sheng dai biao xiang quan shi xia gang zhi gong zi nv fa chu chang yi"
     },
     {
         "hz": [
@@ -4803,7 +4957,8 @@
             "you",
             "yi",
             "jucuo"
-        ]
+        ],
+        "zu": "yi cun liang yin zeng liang shi bei da huang fa zhan de you yi ju cuo"
     },
     {
         "hz": [
@@ -4827,7 +4982,8 @@
             "de",
             "yangpizhi",
             "shougao"
-        ]
+        ],
+        "zu": "xiang huo a ka di ao di er kan ta de yang pi zhi shou gao"
     },
     {
         "hz": [
@@ -4851,7 +5007,8 @@
             "kan",
             "de",
             "jian"
-        ]
+        ],
+        "zu": "shi jing shen wen ming jian she qu de le xu duo kan de jian"
     },
     {
         "hz": [
@@ -4875,7 +5032,8 @@
             "zihao",
             "de",
             "pianzhang"
-        ]
+        ],
+        "zu": "shi zhong hua min zu li shi chang juan zhong ling ren zi hao de pian zhang"
     },
     {
         "hz": [
@@ -4901,7 +5059,8 @@
             "jinxing",
             "pubian",
             "jiancha"
-        ]
+        ],
+        "zu": "shi yi jing dui shi yong zhong de ji jin xing pu bian jian cha"
     },
     {
         "hz": [
@@ -4929,7 +5088,8 @@
             "gudingzichan",
             "dadao",
             "duowanyuan"
-        ]
+        ],
+        "zu": "dao qu nian ta men de qi ye he jian zhu dui gu ding zi chan da dao duo wan yuan"
     },
     {
         "hz": [
@@ -4959,7 +5119,8 @@
             "guanzhu",
             "de",
             "jiaodian"
-        ]
+        ],
+        "zu": "de zi jin yuan zhu he jiu ming yao fang cheng wei shi jie yu lun guan zhu de jiao dian"
     },
     {
         "hz": [
@@ -4987,9 +5148,10 @@
             "quanmian",
             "jinzhi",
             "hewuqi",
-            "gongyve",
+            "gongyue",
             "zhiqian"
-        ]
+        ],
+        "zu": "ta hu yu guo ji she hui zai tan pan di jie quan mian jin zhi he wu qi gong yue zhi qian"
     },
     {
         "hz": [
@@ -5019,7 +5181,8 @@
             "gongzuo",
             "zhuajin",
             "zhuahao"
-        ]
+        ],
+        "zu": "yao ji xu ba qi ta tong zi lou he jiu su she gai zao gong zuo zhua jin zhua hao"
     },
     {
         "hz": [
@@ -5061,7 +5224,7 @@
             "shangchuan",
             "xinhuashe",
             "bageda",
-            "yve",
+            "yue",
             "ri",
             "dian",
             "jizhe",
@@ -5073,7 +5236,8 @@
             "bao",
             "ri",
             "baodao"
-        ]
+        ],
+        "zu": "yi la ke mei ti bao dao mei ying jun jian zu nao fu yi shang chuan xin hua she ba ge da yue ri dian ji zhe gu zheng long ju yi la ke gong he guo bao ri bao dao"
     },
     {
         "hz": [
@@ -5101,7 +5265,8 @@
             "de",
             "gengwei",
             "tanran"
-        ]
+        ],
+        "zu": "er yi wei xing sun de cheng ke hui da de geng wei tan ran"
     },
     {
         "hz": [
@@ -5145,7 +5310,8 @@
             "taijun",
             "daodan",
             "zhendi"
-        ]
+        ],
+        "zu": "jie fang jun bu yong fei duo da li qi jiu neng yong xiang dui lian jia de huo pao che di cui hui tai jun dao dan zhen di"
     },
     {
         "hz": [
@@ -5169,7 +5335,8 @@
             "yijia",
             "shangdian",
             "shi"
-        ]
+        ],
+        "zu": "dang xu jia xiang ji ji zou chu zui hou yi jia shang dian shi"
     },
     {
         "hz": [
@@ -5195,7 +5362,8 @@
             "fengyan",
             "zaoyi",
             "piaosan"
-        ]
+        ],
+        "zu": "yu mei ran er pu shi chun shan de li shi feng yan zao yi piao san"
     },
     {
         "hz": [
@@ -5221,7 +5389,8 @@
             "le",
             "zhiliang",
             "choucha"
-        ]
+        ],
+        "zu": "shi shi chang xiao shou de lei shang pin jin xing le zhi liang chou cha"
     },
     {
         "hz": [
@@ -5245,7 +5414,7 @@
         ],
         "py": [
             "guowuyuan",
-            "jveding",
+            "jueding",
             "zai",
             "quanguo",
             "fanwei",
@@ -5261,7 +5430,8 @@
             "he",
             "zhuanxiang",
             "douzheng"
-        ]
+        ],
+        "zu": "guo wu yuan jue ding zai quan guo fan wei nei kai zhan yi ci da gui mo de fan zou si lian he xing dong he zhuan xiang dou zheng"
     },
     {
         "hz": [
@@ -5297,13 +5467,14 @@
             "ma",
             "ta",
             "dui",
-            "changshun",
+            "zhangshun",
             "shuo",
             "chu",
             "ta",
             "de",
             "yilv"
-        ]
+        ],
+        "zu": "bu shi shang hai yi bai jiu jiang he le ma ta dui zhang shun shuo chu ta de yi lv"
     },
     {
         "hz": [
@@ -5339,7 +5510,8 @@
             "zhuanrang",
             "dou",
             "wurenwenjin"
-        ]
+        ],
+        "zu": "qian yi tian hai zhi wan lu bu yi gu de gu piao yi wan lu bu zhuan rang dou wu ren wen jin"
     },
     {
         "hz": [
@@ -5371,7 +5543,8 @@
             "gan",
             "qianzi",
             "ya"
-        ]
+        ],
+        "zu": "dao di you ji ge gan qian zi de ta men yao shi bu gan qian zi ya"
     },
     {
         "hz": [
@@ -5399,7 +5572,8 @@
             "wei",
             "danwei",
             "jishu"
-        ]
+        ],
+        "zu": "yi chang a er shan lin huo sun shi de yi yi yuan wei dan wei ji shu"
     },
     {
         "hz": [
@@ -5432,7 +5606,7 @@
             "san",
             "guo",
             "laogongbu",
-            "chang",
+            "zhang",
             "zai",
             "huitan",
             "hou",
@@ -5447,7 +5621,8 @@
             "caiqu",
             "de",
             "cuoshi"
-        ]
+        ],
+        "zu": "rui dian he ying guo san guo lao gong bu zhang zai hui tan hou ju xing de ji zhe zhao dai hui shang jie shao le ni gong tong cai qu de cuo shi"
     },
     {
         "hz": [
@@ -5473,7 +5648,8 @@
             "huangse",
             "heng",
             "gang"
-        ]
+        ],
+        "zu": "ge yi duan bian tu you xian ming de huang se heng gang"
     },
     {
         "hz": [
@@ -5499,7 +5675,8 @@
             "he",
             "chuanshuo",
             "gushi"
-        ]
+        ],
+        "zu": "jia shang sheng jing he yin di an ren de yi xie shen hua he chuan shuo gu shi"
     },
     {
         "hz": [
@@ -5519,13 +5696,14 @@
             "yifu",
             "ye",
             "hui",
-            "chang",
+            "zhang",
             "chufan",
             "honghua",
             "yanse",
             "de",
             "shuicao"
-        ]
+        ],
+        "zu": "shi yi fu ye hui zhang chu fan hong hua yan se de shui cao"
     },
     {
         "hz": [
@@ -5549,7 +5727,8 @@
             "gongsi",
             "gongtong",
             "xuanbu"
-        ]
+        ],
+        "zu": "dian nao zhong guo you xian gong si yu tong yuan ke ji gong si gong tong xuan bu"
     },
     {
         "hz": [
@@ -5579,7 +5758,8 @@
             "dongxi",
             "de",
             "shi"
-        ]
+        ],
+        "zu": "ta bu rang shou xia ren qu guan ri ben niang men qiang dong xi de shi"
     },
     {
         "hz": [
@@ -5602,18 +5782,19 @@
             "shijiushiji",
             "yingguo",
             "gudian",
-            "jingjixvejia",
+            "jingjixuejia",
             "he",
             "deguo",
             "gudian",
-            "zhexvejia",
+            "zhexuejia",
             "ceng",
             "tichu",
             "zhongguo",
             "shehui",
             "tingzhi",
             "lun"
-        ]
+        ],
+        "zu": "shi jiu shi ji ying guo gu dian jing ji xue jia he de guo gu dian zhe xue jia ceng ti chu zhong guo she hui ting zhi lun"
     },
     {
         "hz": [
@@ -5632,14 +5813,15 @@
             "you",
             "de",
             "yubei",
-            "zhuo",
+            "zhe",
             "yi",
             "huihua",
             "he",
             "shufa",
             "wei",
             "mei"
-        ]
+        ],
+        "zu": "you de yu bei zhe yi hui hua he shu fa wei mei"
     },
     {
         "hz": [
@@ -5669,7 +5851,8 @@
             "chanpin",
             "de",
             "shengchanzhe"
-        ]
+        ],
+        "zu": "si you gong min de pei yu zhe he you xiu jing shen chan pin de sheng chan zhe"
     },
     {
         "hz": [
@@ -5697,7 +5880,8 @@
             "zuo",
             "chu",
             "baozheng"
-        ]
+        ],
+        "zu": "bi xu jiu di san jie duan ji xu cong xi an che jun zuo chu bao zheng"
     },
     {
         "hz": [
@@ -5721,7 +5905,8 @@
             "de",
             "jianku",
             "pandeng"
-        ]
+        ],
+        "zu": "ta you jing li le jin ge xiao shi de jian ku pan deng"
     },
     {
         "hz": [
@@ -5775,7 +5960,8 @@
             "falv",
             "de",
             "qingkuang"
-        ]
+        ],
+        "zu": "li peng hai xiang ke ren jie shao le quan guo ren min dai biao da hui zhi du he quan guo ren da chang wei hui de zhi neng yi ji quan guo ren da mu qian zheng zai tao lun he shen yi ji ge zhong yao fa lv de qing kuang"
     },
     {
         "hz": [
@@ -5813,7 +5999,8 @@
             "le",
             "de",
             "haoqixin"
-        ]
+        ],
+        "zu": "wo hen gao xing neng you zhe ge yi wai de ji hui man zu wo da da ji qi le de hao qi xin"
     },
     {
         "hz": [
@@ -5837,7 +6024,8 @@
             "guli",
             "de",
             "zhenchan"
-        ]
+        ],
+        "zu": "ye xiang yuan yuan di gan shou ta gu li de zhen chan"
     },
     {
         "hz": [
@@ -5861,7 +6049,8 @@
             "yundonghui",
             "de",
             "cunzai"
-        ]
+        ],
+        "zu": "ren he ren ye wu fa fou ren you hao yun dong hui de cun zai"
     },
     {
         "hz": [
@@ -5885,7 +6074,8 @@
             "de",
             "chuban",
             "jituan"
-        ]
+        ],
+        "zu": "wen hui du shu zhou bao he wen hui chu ban she de chu ban ji tuan"
     },
     {
         "hz": [
@@ -5909,7 +6099,8 @@
             "meiyou",
             "bianhua",
             "guo"
-        ]
+        ],
+        "zu": "kuai qian de shang ye mo shi jiu mei you bian hua guo"
     },
     {
         "hz": [
@@ -5933,7 +6124,8 @@
             "zai",
             "beihou",
             "shuosandaosi"
-        ]
+        ],
+        "zu": "dan shi wo men bu xu yao you xie ren zai bei hou shuo san dao si"
     },
     {
         "hz": [
@@ -5959,7 +6151,8 @@
             "zhaobiao",
             "de",
             "banfa"
-        ]
+        ],
+        "zu": "dui che liang wei xiu ye cai yong le gong kai zhao biao di ban fa"
     },
     {
         "hz": [
@@ -6011,7 +6204,8 @@
             "chang",
             "bianlun",
             "sai"
-        ]
+        ],
+        "zu": "fa zhan yan bian min zu jing ji de yi xie te shu zheng ce ye shi qi ta di fang bi bu liao de fen ju gong hui zu zhi gao le chang bian lun sai"
     },
     {
         "hz": [
@@ -6063,7 +6257,8 @@
             "dongxinanbei",
             "nao",
             "xinchun"
-        ]
+        ],
+        "zu": "dong xi nan bei nao xin chun fu tu pian zhang ben bao xun yi tai yi zhan xian zu guo ge di min su di yu feng qing wei zhu de wan hui dong xi nan bei nao xin chun"
     },
     {
         "hz": [
@@ -6107,7 +6302,8 @@
             "fenmen",
             "de",
             "qingxu"
-        ]
+        ],
+        "zu": "ta de zuo pin jie shi le zai ri ben zhi min zhu yi tong zhi xia tai wan tong bao jian xin de sheng huo he fen men de qing xu"
     },
     {
         "hz": [
@@ -6139,7 +6335,8 @@
             "guoji",
             "shangqu",
             "xuanchuan"
-        ]
+        ],
+        "zu": "niu jiao shou de xing dong jiang hui shi ri ben ren zai guo ji shang qu xuan chuan"
     },
     {
         "hz": [
@@ -6171,7 +6368,8 @@
             "ji",
             "weizhang",
             "shijian"
-        ]
+        ],
+        "zu": "ba dian zi jing cha she lu de wei zhang che liang de che pai hao ma ji wei zhang shi jian"
     },
     {
         "hz": [
@@ -6223,7 +6421,8 @@
             "de",
             "zhongyao",
             "jianghua"
-        ]
+        ],
+        "zu": "chuan da guan che jiang ze min zhu xi zai si zong bu lian he zhao kai de guan che luo shi quan guo da ji zou si gong zuo hui yi jing shen de hui yi shang de zhong yao jiang hua"
     },
     {
         "hz": [
@@ -6257,6 +6456,7 @@
             "fazhan",
             "de",
             "gaochao"
-        ]
+        ],
+        "zu": "tui dong quan xiang xian qi le yi ge li yong zhuan li ji shu cu jin jing ji fa zhan de gao chao"
     }
 ]

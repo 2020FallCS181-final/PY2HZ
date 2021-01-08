@@ -104,11 +104,15 @@ class pySegHMM(object):
                 if pinyin_id != len(SentenceList[st_id]) - 1:
                     nextTag = TagList[st_id][pinyin_id+1]
                     self.Trans[currentTag, nextTag] += 1
-        # self.Trans[1,2] += 200000
-        # self.Trans[2,2] += 100000
+        # print(self.Trans)
+        # perc = 0.01
+        # self.Trans[1,2] += perc * np.sum(self.Trans[1,:])
+        # self.Trans[2,2] += perc * np.sum(self.Trans[2,:])
+
         for i in range(self.n):
-            self.Trans[i,:] = self.Trans[i,:] / np.sum(self.Trans[i,:])
-            self.Emis[i,:] = self.Emis[i,:] / np.sum(self.Emis[i,:])
+             self.Trans[i,:] = self.Trans[i,:] / np.sum(self.Trans[i,:])
+             self.Emis[i,:] = self.Emis[i,:] / np.sum(self.Emis[i,:])
+        
 
     
     def EmisMap(self, observations):

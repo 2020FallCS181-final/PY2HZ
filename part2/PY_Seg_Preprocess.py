@@ -2,6 +2,7 @@ import re
 import os
 import numpy as np
 import pinyin
+from pypinyin import lazy_pinyin
 
 
 '''
@@ -76,13 +77,13 @@ def ConvertingAndTagging(FinalSentenceList):
         SubTagList = []
         for w in s:
             if len(w) == 1:
-                SubPYList.append(pinyin.get(w, format='strip', delimiter=" "))     # Convert to pinyin
+                SubPYList.append(lazy_pinyin(w)[0])     # Convert to pinyin
                 SubTagList.append(S)
 
             # Tagging when more than one symbols
             elif len(w) >= 1:
                 for i in range(len(w)):
-                    SubPYList.append(pinyin.get(w[i], format='strip', delimiter=" "))
+                    SubPYList.append(lazy_pinyin(w[i])[0])
                     if i == 0:
                         SubTagList.append(B)
                     elif i == len(w) - 1:
