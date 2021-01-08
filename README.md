@@ -78,28 +78,71 @@ pip3 install requirement.txt
 ***
 
 ## Numerical Results
+Through out the experiments, we have the following notations:
 
-```{=latex}
-    \begin{table}[H]\centering
-        \begin{tabular}{ccccc}\toprule
-        \multirow{2}{*}{\quad Stage\quad} & \multirow{2}{*}{\quad Acc Type\quad} & \multicolumn{3}{c}{Accuracy (\%)}                              \\ \cline{3-5} 
-                        &   &\, 3-5 \,& \,6-8\, & $\,\ge$9\, \\ \hline
+### Stage
+> **Seg**: Segmentation, i.e. part 1
 
-        \multirow{2}{*}{Seg} & W &  0.999   &  0.998   &  0.992   \\
-                        & S &  0.995   &  0.980   &   0.935  \\ \hline
-        \multirow{2}{*}{Tok} & W &  0.623   &  0.653   &  0.655   \\
-                        & S &  0.265   &  0.140   &   0.060  \\ \hline
-        \multirow{2}{*}{Trs} & W &  0.924 &  0.938  &  0.957   \\
-                        & S &  0.770 &  0.700  &  0.655  \\ \bottomrule
-        \end{tabular}
-        \caption{Accuracy of single stage}
-        \label{tab:my-table1}
-    \end{table}
-               
-```
+> **Tok**: Tokenaization, i.e. part 2
+
+> **Trs**: Translation, i.e. part 3
+
+### Acc Type
+> **W**: accuracy per word, i.e. # of correct words / # of total words
+
+> **S**: accuracy per sentence, i.e. # of correct sentences / # of total sentences
+
+### Test data set:
+> **3-5**: a sentence with 3-5 tokens
+
+> **6-8**: a sentence with 3-5 tokens
+
+> **>=9**: a sentence with >=9 tokens
+
+### Result 
+
+> **top1**: accuracy of the highest scored sentence
+
+> **top3**: accuracy of top 3 highest scored sentences
+
+> **top5**: accuracy of top 5 highest scored sentences
+
+| Stage |  Acc Type | Accuracy (\%) |         |            |
+|:----------------:|:-------------------:|:-------------:|:-------:|:----------:|
+|                  |                     |    3-5    | 6-8 | >= 9 |
+|        Seg       |          W          |     0.999     |  0.998  |    0.992   |
+|                  |          S          |     0.995     |  0.980  |    0.935   |
+|        Tok       |          W          |     0.623     |  0.653  |    0.655   |
+|                  |          S          |     0.265     |  0.140  |    0.060   |
+|        Trs       |          W          |     0.924     |  0.938  |    0.957   |
+|                  |          S          |     0.770     |  0.700  |    0.655   |
 
 
+| Stages |  Acc Type | Accuracy (\%) |          |              |
+|:-----------------:|:-------------------:|:-------------:|:--------:|:------------:|
+|                   |                     |    3-5    |  6-8 | >=9   |
+|    Seg+Tok+Trs    |          W          |     0.782     |   0.827  |     0.824    |
+|                   |          S          |     0.310     |   0.230  |     0.085    |
+|      Seg+Trs      |          W          |     0.786     |   0.793  |     0.801    |
+|                   |          S          |     0.365     |   0.220  |     0.095    |
 
+|  Stages | Acc Type | Accuracy (\%) |          |              |
+|:-----------------:|:-------------------:|:-------------:|:--------:|:------------:|
+|                   |                     |    3-5    | 6-8 | >= 9   |
+|    Seg+Tok+Trs    |          W          |     0.782     |   0.827  |     0.824    |
+|                   |          S          |     0.310     |   0.230  |     0.085    |
+|      Seg+Trs      |          W          |     0.786     |   0.793  |     0.801    |
+|                   |          S          |     0.365     |   0.220  |     0.095    |
+
+| Number of tokens | Accuracy Type |   Accuracy (\%)   |                   |                   |
+|:---------------------------:|:------------------------:|:-----------------:|:-----------------:|:-----------------:|
+|                             |                          | Top1 | Top3 | Top5 |
+|             3-5             |             W            |       0.782       |       0.826       |       0.837       |
+|                             |             S            |       0.310       |       0.375       |       0.395       |
+|             6-8             |             W            |       0.827       |       0.855       |       0.863       |
+|                             |             S            |       0.230       |       0.285       |       0.295       |
+|            >=9           |             W            |       0.824       |       0.854       |       0.864       |
+|                             |             S            |       0.085       |       0.115       |       0.135       |
 
 
 
