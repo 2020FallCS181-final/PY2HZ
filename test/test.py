@@ -18,7 +18,11 @@ from pypinyin import lazy_pinyin
 this file is used to test the accuracy of each method under different length of tokens
 '''
 
-def dataprocess_part2(tokenLength):
+
+'''
+run this to test part2 solely
+'''
+def test_part2(tokenLength):
     loadpath = '../part2/model'
     SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
     
@@ -80,61 +84,7 @@ def norm_pinyin(pylist):
 	    	result.append(pinyin)
 	return result
 
-def test123(tokenLength):
-    loadpath = '../part2/model'
-    SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
-    finalhmm = HmmParam()
-    trie_Tree = Trie_Tree('root')
-    
-    datapath = '../test_dataset/test_set_'
-    for leng in tokenLength:
-        jsondata = json.load(open(datapath+leng+'.json',encoding='UTF-8'))
-        sentenceNum = len(jsondata)
-        sentenceCorrectCount = 0
-        totalTokenNum = 0
-        tokenCorrectCount = 0
-        for sentence in jsondata:
-            discretepy = sentence['zu']
-            groundTruthhanzi = sentence['hz']
-
-            segPY = trie_Tree.search(discretepy.replace(" ", '')).split()
-
-            tagList = SegHmm.Viterbi(segPY)
-            retList = PY_Discre2Continu(segPY, tagList)
-            
-            
-            
-            try:
-	            answer = Viterbi(finalhmm,retList,5)[0].path
-            except:
-                try:
-                    answer = Viterbi(finalhmm,norm_pinyin(retList),5)[0].path
-                except:
-                    continue
-            answer_str = ''
-            groundTruth_str = ''
-            for token in answer:
-                answer_str += token
-
-            for token in groundTruthhanzi:
-                groundTruth_str += token
-
-            tokenNum = len(groundTruth_str)
-            totalTokenNum += tokenNum
-
-            if groundTruth_str == answer_str:
-                sentenceCorrectCount += 1
-                tokenCorrectCount += tokenNum
-            else:
-                for i in range(min(len(groundTruth_str),len(answer_str))):
-                    if groundTruth_str[i] == answer_str[i]:
-                        tokenCorrectCount += 1
-        print(leng)
-        print('sentence correct percent: {}'.format(float(sentenceCorrectCount) / sentenceNum))
-        print('token correct percent: {}'.format(float(tokenCorrectCount) / totalTokenNum))
-        print("===========================================================================")      
-
-
+ 
 def part123first3and5(tokenLength, firstnum):
     loadpath = '../part2/model'
     SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
@@ -204,7 +154,7 @@ def part123first3and5(tokenLength, firstnum):
         print(leng)
         print('sentence correct percent: {}'.format(float(sentenceCorrectCount) / sentenceNum))
         print('token correct percent: {}'.format(float(tokenCorrectCount) / totalTokenNum))
-        print("===========================================================================")   
+        print("===========================================================================") 
             
 def part13first3and5(tokenLength, firstnum):
     loadpath = '../part2/model'
@@ -282,44 +232,32 @@ def part13first3and5(tokenLength, firstnum):
 
 
 if __name__ == "__main__":
+    '''
+    change this in order to test on different datasets:
+
+    - '3to5'         % # of tokens >= 3, <= 5,   200 pieces of data
+
+    - '6to8'         % # of tokens >= 6, <= 8,   200 pieces of data
+
+    - '9plus'        % # of tokens >= 9,         200 pieces of data
+
+    - 'mixed'        % # of tokens >= 3,         600 pieces of data
+
+    '''
+    
     tokenLength = ['3to5', '6to8', '9plus', 'mixed']
-    part13first3and5(tokenLength, 3)
-    part13first3and5(tokenLength, 5)
-
-    # trie_Tree = Trie_Tree('root')
-    # loadpath = '../part2/model'
-    # SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
-
-    # '''
-    # part1:
-
-    # 'woaibeijingtiananmen'    -->   ['wo', 'ai', 'bei', 'jing', 'tian', 'an', 'men']
-    # '''
     
-    # trie_Tree = Trie_Tree('root')
-    # segPY = trie_Tree.search("zailiangdeshirentoutengdedengguangxia").split()
-    # print(segPY)
     
-    # '''
-    # part2:
-
-    # ['wo', 'ai', 'bei', 'jing', 'tian', 'an', 'men']    -->   ['wo', 'ai', 'beijing', 'tiananmen']
-    # '''
+    '''
+    Use the following functions to test the accuracy of each parts in sentences/words:
     
-    # tagList = SegHmm.Viterbi(segPY)
-    # retList = PY_Discre2Continu(segPY, tagList)
+    - part123first3and5(tokenLength, 1)                % the accuracy of part1 + part2 + part3
     
-    # print(retList)
-
-    # '''
-    # part3:
-
-    # ['wo', 'ai', 'beijing', 'tiananmen']    -->   ['我', '爱', '北京', '天安门']
-    # '''
+    - part13first3and5(tokenLength, 5)                 % the accuracy of part1 + part3
     
-    # finalhmm = HmmParam()
-    # finalList1 = Viterbi(finalhmm,retList,5)
-    # print(finalList1)
+    - test_part2(tokenLength)                          % the accuracy of part2
+    
+    '''
+    part123first3and5(tokenLength, 1)
 
-    # finalList2 = Viterbi(finalhmm,segPY,5)
-    # print(finalList2)
+    

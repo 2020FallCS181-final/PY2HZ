@@ -10,7 +10,7 @@ class Trie_Tree(object):
     
     def __init__(self, root):
         self.root = self.Trie_Tree_Node(root)
-        with open ('../part1/pinyin_to_init_trie_tree.utf8', 'r') as f:
+        with open ('../train_dataset/pinyin_to_init_trie_tree.utf8', 'r') as f:
             pinyin_content = f.read().split()
         for item in pinyin_content:
             self.insert(item)

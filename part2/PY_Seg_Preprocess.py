@@ -11,7 +11,7 @@ Non-Chinese symbols are intepreted as delimiter.
 '''
 
 # DATA_PATH = './icwb2-data/training/pku_training.utf8'  
-DATA_PATH = './icwb2-data/training/sentence_split.txt'             # Path of data we will use
+DATA_PATH = '../train_dataset/sentence_split.txt'             # Path of data we will use
 
 def LoadData(dir):
     '''

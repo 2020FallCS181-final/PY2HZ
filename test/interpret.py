@@ -17,13 +17,15 @@ this file interpret a single sentence to chinese
 '''
 
 if __name__ == "__main__":
+    inputstr = input('input a continuous pinyin, e.g. woaibeijingtiananmen: ')
+    
     '''
     part1:
 
     'woaibeijingtiananmen'    -->   ['wo', 'ai', 'bei', 'jing', 'tian', 'an', 'men']
     '''
     trie_Tree = Trie_Tree('root')
-    segPY = trie_Tree.search("zailiangdeshirentoutengdedengguangxia").split()
+    segPY = trie_Tree.search(inputstr).split()
     print(segPY)
     
     '''
@@ -43,10 +45,10 @@ if __name__ == "__main__":
 
     ['wo', 'ai', 'beijing', 'tiananmen']    -->   ['我', '爱', '北京', '天安门']
     '''
-    retList = ['zai', 'liang', 'de', 'shiren', 'touteng', 'de', 'dengguang', 'xia']
+    
     finalhmm = HmmParam()
     finalList1 = Viterbi(finalhmm,retList,5)
-    print(finalList1)
+    print("with part2: {}".format(finalList1))
 
     finalList2 = Viterbi(finalhmm,segPY,5)
-    print(finalList2)
+    print("without part2: {}".format(finalList2))

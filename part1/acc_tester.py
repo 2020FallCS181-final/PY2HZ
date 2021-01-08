@@ -2,7 +2,7 @@ from seg_with_trie_consider_next import Trie_Tree
 from seg_with_regex import seg_with_re
 
 def sentence_acc():
-    with open ('sentence.utf8', 'r') as f:
+    with open ('../train_dataset/sentence.utf8', 'r') as f:
         pinyin_content = f.readlines()
     t = total = 0
     wa = []
@@ -23,7 +23,7 @@ def sentence_acc():
 def consecutive_pinyin_acc():
     print('in consecutive_pinyin_acc')
     tree = Trie_Tree('root')
-    with open ('sentence.utf8', 'r') as f:
+    with open ('../train_dataset/sentence.utf8', 'r') as f:
         pinyin_content = f.read().replace('\n', '').split()
     step = 4
     t = total = 0
