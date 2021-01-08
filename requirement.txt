@@ -3,3 +3,4 @@ pypinyin
 pinyin
 ChineseTone
 thulac
+tqdm

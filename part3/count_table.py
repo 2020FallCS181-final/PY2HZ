@@ -6,14 +6,14 @@ from tqdm import tqdm
 import json
 from ChineseTone import PinyinHelper
 
-ROOT_THUOCL  = './THUOCL'
-HANZI2PINYIN_FILE = './hanzipinyin.txt'
-SENTENCE_FILE = './result/sentence.txt'
-SENTENCE_SPLIT_FILE = './result/sentence_split.txt'
+ROOT_THUOCL  = '../part3/THUOCL'
+HANZI2PINYIN_FILE = '../part3/hanzipinyin.txt'
+SENTENCE_FILE = '../part3/result/sentence.txt'
+SENTENCE_SPLIT_FILE = '../part3/result/sentence_split.txt'
 
-START_COUNT = './result/start_count.json'
-EMMISSION_COUNT = './result/emmission_count.json'
-TRANSITION_COUNT = './result/transition_count.json'
+START_COUNT = '../part3/result/start_count.json'
+EMMISSION_COUNT = '../part3/result/emmission_count.json'
+TRANSITION_COUNT = '../part3/result/transition_count.json'
 
 BASE = 1000
 THRESHOLD = 1
@@ -44,20 +44,6 @@ def topinyin_sentence(sentence):
 			result.append(utils.simplify_pinyin(py))
 	return result
 
-def train_on_hanzipinyin(emmission):
-	for line in open(HANZI2PINYIN_FILE):
-		line = line.strip()
-		# line = util.as_text(line.strip())
-		if '=' not in line:
-			continue
-		hanzi, pinyins = line.split('=')
-		pinyins = pinyins.split(',')
-		pinyins = [utils.simplify_pinyin(py) for py in pinyins]
-		# print(hanzi,pinyins)
-		for pinyin in pinyins:
-			emmission.setdefault(hanzi, {})
-			emmission[hanzi].setdefault(pinyin, 0)
-			emmission[hanzi][pinyin] += 1
 
 def train_on_sentence(start,emmission,transition):
 	for line in open(SENTENCE_FILE):
@@ -146,8 +132,6 @@ def main():
 	emmission = {}
 	transition = {}
 
-	print('train_on_hanzipinyin')
-	train_on_hanzipinyin(emmission)
 	print('train_on_THUOCL')
 	train_on_THUOCL(start,emmission,transition)
 	print('train_on_sentence')

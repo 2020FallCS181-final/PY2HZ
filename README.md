@@ -49,23 +49,36 @@ pip3 install requirement.txt
 
     ```
 * ***test***:
-
-    in this folder, use the following command to test/train
+    in folder **part2**
     ```
-    bash trainpart2.sh              % train the 2nd part
+    bash train.sh              % train the 2nd part
+    
     ```
-
+    in folder **part3**
     ```
-    bash trainpart3.sh              % train the 3rd part
-    ```
-
-    ```
-    python interpret.py             % test a single sentence
-    ```
+    bash train.sh              % train the 3rd part
 
     ```
-    python test.py                  % test a batch of sentence
+    in folder **combination**
+
     ```
+    bash singlesentence.sh             
+    
+    % test a single sentence; alternatively, use
+
+    python ./test/interpret.py
+
+    ```
+    in folder **combination**
+    ```
+    bash accuracytest.sh                
+    
+    % test a batch of sentence, to get the accuracy on words / sentences; note that this may cause long time, and some relative path problem may occur on different PCs, so if you need to run the accuracy test, please contact yuzy@shanghaitech.edu.cn. Alternatively, use the following code
+
+    python ./test/test.py 
+    ```
+
+    for accuracy test of part1 and part3, please refer to branch 'zheng_dev' and 'main' respectively
 
 * ***test_dataset***
 

@@ -23,10 +23,10 @@ this file is used to test the accuracy of each method under different length of 
 run this to test part2 solely
 '''
 def test_part2(tokenLength):
-    loadpath = '../part2/model'
+    loadpath = 'part2/model'
     SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
     
-    datapath = '../test_dataset/test_set_'
+    datapath = 'test_dataset/test_set_'
     for leng in tokenLength:
         jsondata = json.load(open(datapath+leng+'.json',encoding='UTF-8'))
         sentenceNum = len(jsondata)
@@ -86,12 +86,12 @@ def norm_pinyin(pylist):
 
  
 def part123first3and5(tokenLength, firstnum):
-    loadpath = '../part2/model'
+    loadpath = 'part2/model'
     SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
     finalhmm = HmmParam()
     trie_Tree = Trie_Tree('root')
 
-    datapath = '../test_dataset/test_set_'
+    datapath = 'test_dataset/test_set_'
     print("topnum = {}".format(firstnum))
     for leng in tokenLength:
         jsondata = json.load(open(datapath+leng+'.json',encoding='UTF-8'))
@@ -157,12 +157,12 @@ def part123first3and5(tokenLength, firstnum):
         print("===========================================================================") 
             
 def part13first3and5(tokenLength, firstnum):
-    loadpath = '../part2/model'
+    loadpath = 'part2/model'
     SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
     finalhmm = HmmParam()
     trie_Tree = Trie_Tree('root')
 
-    datapath = '../test_dataset/test_set_'
+    datapath = 'test_dataset/test_set_'
     print("topnum = {}".format(firstnum))
     for leng in tokenLength:
         jsondata = json.load(open(datapath+leng+'.json',encoding='UTF-8'))
@@ -258,6 +258,8 @@ if __name__ == "__main__":
     - test_part2(tokenLength)                          % the accuracy of part2
     
     '''
+    test_part2(tokenLength) 
+    #print(tokenLength)
     part123first3and5(tokenLength, 1)
 
     

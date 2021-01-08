@@ -44,7 +44,7 @@ if __name__ == "__main__":
 
     ['wo', 'ai', 'bei', 'jing', 'tian', 'an', 'men']    -->   ['wo', 'ai', 'beijing', 'tiananmen']
     '''
-    loadpath = '../part2/model'
+    loadpath = 'part2/model'
     SegHmm = pySegHMM(4, 100, Trans=np.load(loadpath+'/trans.npy'), Emis=np.load(loadpath+'/Emis.npy'), initDist=np.load(loadpath+'/initDist.npy'), PYdict=np.load(loadpath+'/dict.npy').item())
     tagList = SegHmm.Viterbi(segPY)
     retList = PY_Discre2Continu(segPY, tagList)
