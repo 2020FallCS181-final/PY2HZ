@@ -73,7 +73,7 @@ pip3 install requirement.txt
     ```
     bash accuracytest.sh                
     
-    % test a batch of sentence, to get the accuracy on words / sentences; note that this may cause long time, and some relative path problem may occur on different PCs, so if you need to run the accuracy test, please contact yuzy@shanghaitech.edu.cn. Alternatively, use the following code
+    % test a batch of sentence, to get the accuracy on words / sentences; note that this may cost long time, and some relative path problem may occur on different PCs, so if you need to run the accuracy test, please contact yuzy@shanghaitech.edu.cn. Alternatively, use the following code
 
     python ./test/test.py 
     ```
