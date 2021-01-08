@@ -1,0 +1,5 @@
+numpy
+pypinyin
+pinyin
+ChineseTone
+thulac
